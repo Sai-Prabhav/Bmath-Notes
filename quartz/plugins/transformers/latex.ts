@@ -9,6 +9,10 @@ import { Options as MathjaxOptions } from "rehype-mathjax/svg"
 //@ts-ignore
 import { Options as TypstOptions } from "@myriaddreamin/rehype-typst"
 
+const mathJaxPreamble = `
+\\newcommand{\\ex}[1][X]{\\mathrm{E}\\left[ #1 \\right]}
+`
+
 interface Options {
   renderEngine: "katex" | "mathjax" | "typst"
   customMacros: MacroType
@@ -38,10 +42,14 @@ export const Latex: QuartzTransformerPlugin<Partial<Options>> = (opts) => {
           return [[rehypeTypst, opts?.typstOptions ?? {}]]
         }
         case "mathjax": {
-          return [[rehypeMathjax, { macros, ...(opts?.mathJaxOptions ?? {}) }]]
+          return [
+            [rehypeMathjax, { macros, ...(opts?.mathJaxOptions ?? {}), preamble: mathJaxPreamble }],
+          ]
         }
         default: {
-          return [[rehypeMathjax, { macros, ...(opts?.mathJaxOptions ?? {}) }]]
+          return [
+            [rehypeMathjax, { macros, ...(opts?.mathJaxOptions ?? {}), preamble: mathJaxPreamble }],
+          ]
         }
       }
     },

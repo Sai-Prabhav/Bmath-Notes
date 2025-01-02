@@ -1,14 +1,18 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { AddContent } from "./quartz/plugins/transformers/addcontent"
 
 /**
  * Quartz 4.0 Configuration
  *
  * See https://quartz.jzhao.xyz/configuration for more information.
  */
+
+
+
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "BMath. Notes",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -56,6 +60,7 @@ const config: QuartzConfig = {
   },
   plugins: {
     transformers: [
+      AddContent(),
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "filesystem"],
@@ -72,7 +77,11 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Latex({
+        renderEngine: "mathjax",
+        customMacros: { "\\end{proof}": "\\blacksquare" ,"\\begin{proof}": "\\textbf{Proof:}"},
+      }),
+      // Plugin.Latex.customMacros({})
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
