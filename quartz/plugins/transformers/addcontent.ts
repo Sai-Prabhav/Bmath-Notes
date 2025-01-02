@@ -5,7 +5,7 @@ export const AddContent: QuartzTransformerPlugin<{ }> = (opts) => {
   
   var content = "not working"
   fs.readFile(
-    "/home/greenflame/Desktop/quar/quartz/Custom Commands.latex",
+    "./Custom Commands.latex",
     (err: any, data: { toString: () => any }) => {
       if (err) throw err
   
