@@ -14,6 +14,7 @@ export const AddContent: QuartzTransformerPlugin<{ }> = (opts) => {
     },
   )
   
+  
   return {
     name: "AddContent",
     textTransform(_ctx, src) {
