@@ -43,7 +43,7 @@ Example:
 - Cost of books
 ### Ordinal 
 Ordered but not numerical 
-- Rating like bad ok good better 
+- Rating like bad average good better 
 - Grades 
 
 Previous: [[content/Statistics/Statistics Topics|Statistics Topics]]
