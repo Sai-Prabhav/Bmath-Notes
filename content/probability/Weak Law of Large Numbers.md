@@ -1,12 +1,13 @@
-Let $\left\{ X_{k} \right\}_{k\geq1}$ be a sequence of iid RVs with $\ex[\left|X_{1}\right|]<\infty$ 
+Let $\left\{ X_{k} \right\}_{k\geq1}$ be a sequence of iid RVs with $\ex[\left|X_{1}\right|]<\infty$
 Let $\mu=\ex[X_{i}]$
-Then for any $a>0$ 
+Then for any $a>0$
 $$P \left(\Mod[ \frac{X_{1}+X_{2}+\dots+X_{n}}{n} ]>a\right)\stackrel{n\to \infty}{\to}0$$
 
-`\begin{proof}` 
-Assume $\Omega$ is countable 
-$a>0$ is fixed 
-Case 1: $\sigma^{2}=\var[X_{1}]<\infty$ 
+`\begin{proof}`
+Assume $\Omega$ is countable
+$a>0$ is fixed
+Case 1: $\sigma^{2}=\var[X_{1}]<\infty$
+
 $$
 \begin{align}
 P\left( \left|\frac{S_{n}}{n}-\mu  \right|>a \right) & =P(\Mod[S_{n} -n\mu]>na ) \\
@@ -14,18 +15,22 @@ P\left( \left|\frac{S_{n}}{n}-\mu  \right|>a \right) & =P(\Mod[S_{n} -n\mu]>na )
  & =\frac{n\sigma^{2} }{n^{2} a^{2} }\to0
 \end{align}
 $$
+
 Case II: $\sigma^{2}=\infty$
 Assume $\mu=\ex[X_{1}]=0$
 Let $\delta>0$ (to be fixed later)
-for each $n$ define $n$ pairs of RVs 
+for each $n$ define $n$ pairs of RVs
 $U_{1},V_{1},U_{2},V_{2}\dots U_{n},V_{n}$
+
 $$
 \begin{align}
 U_{k} & =X_{k}  , V_{k} & =0 \if   \Mod[X+k]  & \geq\delta_ {n} \\
-U_{k} & =0, V_{k} & =X_{k} \if    \Mod[X+k]  & >\delta_ {n} 
+U_{k} & =0, V_{k} & =X_{k} \if    \Mod[X+k]  & >\delta_ {n}
 \end{align}
 $$
+
 $X_{k}=U_{k}+V_{k}$
+
 $$
 \begin{align}
 \left\{ \Mod[X_{1}+X_{2}+\dots X_{n}  ]\geq na  \right\}  & \supseteq \left\{ |U_{1}+\dots U_{n}  | >\frac{na}{2}\right\} \or \left\{ \Mod[V_{1}+\dots V_{n} ]  > \frac{na}{2}\right\} \\
@@ -34,6 +39,7 @@ P(\Mod[X_{1}+X_{2}+\dots X_{n}  ]\geq na  ) & \leq \underbrace{ P\left( |U_{1}+\
 $$
 
 Solving $\Large{ I }$
+
 $$
 \begin{align}
 P\left( \Mod[U_{1}+\dots U_{n} ]  > \frac{na}{2} \right)  & \leq \frac{4\ex[{\Mod[U_{1}+\dots+U_{n} ]^{2}  }]}{n^{2} a^{2} }  \\
@@ -43,32 +49,30 @@ P\left( \Mod[U_{1}+\dots U_{n} ]  > \frac{na}{2} \right)  & \leq \frac{4\ex[{\Mo
 \var[U_{1}+\dots+U_{n} ]  & = n\var[U_{1}] \leq nE(U^{2} _{1} )\leq\delta n^{2} \ex[{\Mod[U_{1}] }] \\
 \Large{ I } & = \frac{1}{a^{2} n^{2} }[\delta n^{2} E[{\Mod[U_{1}] }]+(n\ex[U_{1}])^{2}  ] \\
 \ex[U_{1} ] & =\ex[{\Mod[X_{1}] .1_{\left\{ X_{1}\leq\delta_{n}  \right\}} }]   \\
-\ex[U_{1}] &  =\ex[X_{1}1_{\left\{ \Mod[X_{1}]\leq\delta_{n}   \right\}} ] 
+\ex[U_{1}] &  =\ex[X_{1}1_{\left\{ \Mod[X_{1}]\leq\delta_{n}   \right\}} ]
 \end{align}
 $$
 
-> [!lemma] 
-> $\ex[{\Mod[U_{1}]}]\to \ex[|X_{1}|]$ 
+> [!lemma]
+> $\ex[{\Mod[U_{1}]}]\to \ex[|X_{1}|]$
 
- solving $\Large{ II }$
- $$
+solving $\Large{ II }$
+
+$$
 \begin{align}
 P(V_{1}+V_{2}\dots V_{n} \neq0) & \leq P(\left\{ V_{1}\neq0 \right\}\cup \dots \cup \left\{ V_{n} \neq0 \right\} ) \\
- & = nP(V\neq0) \\
- & =nP(\Mod[X]>\delta_{n}  ) \\
- & = n \sum_{|X|>\delta_{n}  }^{ } P(X_{1}=x ) \\
- & \leq n \sum_{\Mod[X]  >\delta _{n} } \frac{\Mod[x]}{\delta_{n} }  P(X_{1}=x ) \\
- & = \frac{1}{\delta}\ex[{\Mod[X_{1}]>\delta_{n} } ]\to0 \ (\text{ Lemma *})
+& = nP(V\neq0) \\
+& =nP(\Mod[X]>\delta_{n}  ) \\
+& = n \sum_{|X|>\delta_{n}  }^{ } P(X_{1}=x ) \\
+& \leq n \sum_{\Mod[X]  >\delta _{n} } \frac{\Mod[x]}{\delta_{n} }  P(X_{1}=x ) \\
+& = \frac{1}{\delta}\ex[{\Mod[X_{1}]>\delta_{n} } ]\to0 \ (\text{ Lemma *})
 \end{align}
+
 
 $$
 
 Let $\delta= \frac{\upvarepsilon a^{2}}{16 \ex[X_{1}]}$
 
-Chose $N$ large $s$ that $\ex[U_{1}]\leq \frac{\upvarepsilon a }{4}$ then for $n>N_{1}$ chose $N_{2}$ large such that $*$ $\implies \frac{\upvarepsilon}{2}$ 
+Chose $N$ large $s$ that $\ex[U_{1}]\leq \frac{\upvarepsilon a }{4}$ then for $n>N_{1}$ chose $N_{2}$ large such that $*$ $\implies \frac{\upvarepsilon}{2}$
 
-
-
-
- `\end{proof}`
- 
+`\end{proof}`

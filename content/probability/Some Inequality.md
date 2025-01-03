@@ -1,30 +1,32 @@
-
-> [!thm] 
-> Let $\Omega$ be a countable state space 
->$P(\omega),\omega \in \Omega$ 
+> [!thm]
+> Let $\Omega$ be a countable state space
+> $P(\omega),\omega \in \Omega$
 > For RV $\st$ $X(\omega)\leq Y(\omega) \fa\omega \in\Omega$ then
 > $\ex[X]\leq \ex[Y]$
 
-`\begin{proof}` 
+`\begin{proof}`
+
 $$
 \begin{align}
-\ex[X] =\sum_{\omega \in\Omega}X(\omega)P(\omega) \leq  \sum_{\omega \in\Omega}Y(\omega)P(\omega)=\ex[Y] 
+\ex[X] =\sum_{\omega \in\Omega}X(\omega)P(\omega) \leq  \sum_{\omega \in\Omega}Y(\omega)P(\omega)=\ex[Y]
 \end{align}
 $$
 
- `\end{proof}`
+`\end{proof}`
 
 ### Markov's Inequality
-> [!thm] 
->Let $X$ non-negative RV then for $a>0$ 
->
+
+> [!thm]
+> Let $X$ non-negative RV then for $a>0$
+
 $$
 \begin{align}
 P(X>a)\leq \frac{\ex[X]}{a}
 \end{align}
 $$
 
-`\begin{proof}` 
+`\begin{proof}`
+
 $$
 \begin{align}
 I_{a} (\omega) & =\begin{cases}
@@ -38,15 +40,15 @@ P(x\geq a ) & \leq \frac{X(\omega)}{a} \\
 \end{align}
 $$
 
+`\end{proof}`
 
-
- `\end{proof}`
- > [!remark] 
- > A better bound would be 
- > $P(x\geq a)\leq \frac{E(X.1_{{x\geq a}})}{a}$
+> [!remark]
+> A better bound would be
+> $P(x\geq a)\leq \frac{E(X.1_{{x\geq a}})}{a}$
 
 $X\sim N(0,1)$
-$f(x)= \frac{1}{\sqrt{ 2\pi }}e^{-x^{2}/2}$ 
+$f(x)= \frac{1}{\sqrt{ 2\pi }}e^{-x^{2}/2}$
+
 $$
 \begin{align}
 p(X>a) & =\int^{\infty}_{a}\frac{1}{\sqrt{ 2\pi }}\upvarepsilon^{-x^{2} /2}   dx \\
@@ -55,15 +57,12 @@ p(X>a) & =\int^{\infty}_{a}\frac{1}{\sqrt{ 2\pi }}\upvarepsilon^{-x^{2} /2}   dx
 \end{align}
 $$
 
-> [!theorem] 
-> 
-let $X,Y$ be [Continuous Random Variable](https://sai-prabhav.github.io/bmath_notes/website/probability/7.-continuous-random-variable.html) 
-$0\leq x(\omega)\leq y(\omega)$ 
->show that $\ex[X]\leq \ex[Y]$
+> [!theorem]
+>
+> let $X,Y$ be [Continuous Random Variable](https://sai-prabhav.github.io/bmath_notes/website/probability/7.-continuous-random-variable.html) > $0\leq x(\omega)\leq y(\omega)$
+> show that $\ex[X]\leq \ex[Y]$
 
-
-`\begin{proof}` 
-
+`\begin{proof}`
 
 $$
 \begin{align}
@@ -74,35 +73,30 @@ P(X>x) & \leq P(y>x)
 \end{align}
 $$
 
- `\end{proof}`
-### Chebyshev's inequality 
+`\end{proof}`
 
-> [!theorem] 
-> $X$ RV with finite mean $\mu=\ex[X]$ and finite varience $\sigma^{2}=\var[X]$ 
-> then for $a>0$
-> $P(\Mod[X-\mu]>a)\leq \frac{\var[X]}{a}$
+### Chebyshev's inequality
 
+> [!theorem] > $X$ RV with finite mean $\mu=\ex[X]$ and finite varience $\sigma^{2}=\var[X]$
+> then for $a>0$ > $P(\Mod[X-\mu]>a)\leq \frac{\var[X]}{a}$
 
-
-`\begin{proof}` 
+`\begin{proof}`
 
 $$
 \begin{align}
 P(\Mod[X-\mu]^{2} \geq a^{2}  ) & \leq E\left( \frac{\Mod[X-\mu]^{2}}{a^{2} }  \right)  \\
- & = \frac{\var[X]}{a^{2} } 
+ & = \frac{\var[X]}{a^{2} }
 \end{align}
 $$
 
+`\end{proof}`
 
-
-
- `\end{proof}`
-
-> [!exercise] 
+> [!exercise]
 > If $\var[X]=0$ then show $P(X=\ex[X])=1$
 
-`\begin{proof}` 
+`\begin{proof}`
 $\fa\upvarepsilon>0$
+
 $$
 \begin{align}
 P(\Mod[X-\mu] >\upvarepsilon) & \leq \frac{\var[X]}{\upvarepsilon^{2} } \\
@@ -112,8 +106,4 @@ P(\Mod[X-\mu] >\upvarepsilon) & \leq \frac{\var[X]}{\upvarepsilon^{2} } \\
 \end{align}
 $$
 
-
-
-
- `\end{proof}`
- 
+`\end{proof}`

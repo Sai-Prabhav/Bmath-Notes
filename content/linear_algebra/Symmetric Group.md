@@ -29,9 +29,12 @@ $S_{n}$ is called the symmetric group of degree n
 > $\ZZ/4\ZZ,\ \ \ \ZZ/2\ZZ \times\ZZ/2\ZZ$
 
 $S_{3}=\left\{ 1,\sigma=(1\ 2 \ 3),\sigma^{2}=(1 \ 3\ 2), \tau=(1 \ 2), \sigma \tau=(1 \ 3), \tau\sigma=(2\ 3) \right\}$
-> [!remark] 
-> A  cycle with contains $K$ integers is said to be of length $K$ 
+
+> [!remark]
+>A  cycle with contains $K$ integers is said to be of length $K$ 
 > A $K$ - Cycle $\sigma=(i_{1},i_{2}..i_{k})$ is of order $K$ ie, $\sigma^{k}=1$ 
+
+
 
 > [!definition] 
 > Two cycles in $S_{n}$ are called disjoint if they have no integer in common.
