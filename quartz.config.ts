@@ -8,8 +8,6 @@ import { AddContent } from "./quartz/plugins/transformers/addcontent"
  * See https://quartz.jzhao.xyz/configuration for more information.
  */
 
-
-
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "BMath. Notes",
@@ -20,8 +18,8 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "bmath-notes.pages.dev",
+    ignorePatterns: ["private", "templates", ".obsidian", "snippet"],
     defaultDateType: "created",
     generateSocialImages: false,
     theme: {
@@ -79,7 +77,8 @@ const config: QuartzConfig = {
       Plugin.Description(),
       Plugin.Latex({
         renderEngine: "mathjax",
-        customMacros: { "\\end{proof}": "\\blacksquare" ,"\\begin{proof}": "\\textbf{Proof:}"},
+        // customMacros: { "\\end{proof}": "\\blacksquare", "\\begin{proof}": "\\textbf{Proof:}" },
+        customMacros: { },
       }),
       // Plugin.Latex.customMacros({})
     ],

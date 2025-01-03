@@ -18,9 +18,16 @@ export const AddContent: QuartzTransformerPlugin<{ }> = (opts) => {
     name: "AddContent",
     textTransform(_ctx, src) {
       if (src instanceof Buffer) {
-        src = src.toString()
+        src = src.toString().replace(/`\\end{proof}`/g, "\n\$\\blacksquare\$\n").replace(/`\\begin{proof}`/g, "\n\$\\bf{proof}\$\n")
       }
-  
+      else if (src instanceof String) {
+        src = src.replace(/`\\end{proof}`/g, "\n\$\\blacksquare\$\n").replace(/`\\begin{proof}`/g, "\n\$\\bf{proof}\$\n")
+        
+      } 
+      else{
+        src = src.replace(/`\\end{proof}`/g, "\n\$\\blacksquare\$\n").replace(/`\\begin{proof}`/g, "\n\$\\bf{proof}\$\n")
+      }
+      
       return `${content}\n${src}`
     },
   }
