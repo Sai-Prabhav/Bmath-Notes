@@ -10,7 +10,6 @@ export const AddContent: QuartzTransformerPlugin<{ }> = (opts) => {
       if (err) throw err
   
       content = data.toString()
-      console.log(content)
     },
   )
   
