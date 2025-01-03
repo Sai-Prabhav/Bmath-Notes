@@ -99,5 +99,21 @@ $$
  `\end{proof}`
 
 > [!exercise] 
-> If $\var[X]=0$ then
-> 
+> If $\var[X]=0$ then show $P(X=\ex[X])=1$
+
+`\begin{proof}` 
+$\fa\upvarepsilon>0$
+$$
+\begin{align}
+P(\Mod[X-\mu] >\upvarepsilon) & \leq \frac{\var[X]}{\upvarepsilon^{2} } \\
+ & =0 \\
+\let A_{n}  & =\left\{ \Mod[X-\mu]> \frac{1}{n}  \right\} \\
+\lim_{n\to \infty} P(A_{n} ) & =0
+\end{align}
+$$
+
+
+
+
+ `\end{proof}`
+ 
