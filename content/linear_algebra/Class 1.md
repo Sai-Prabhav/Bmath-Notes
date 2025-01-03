@@ -52,6 +52,67 @@ S_{n} & =\begin{pmatrix}
 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 \\
 2 & 6 & 4 & 3 & 5 & 1 & 10 &   8 & 7 & 9 & 12 & 13 & 14 & 11
 \end{pmatrix}     \\
- & =(1\ 2\ 6)(3\ 4)(5)(7\ 10 \ 9)(8)(11\ 12 )
+ & =(1\ 2\ 6)\ (3\ 4)\ (5) \ (7\ 10 \ 9)\ (8)\ (11\ 12\ 13\ 14) \\
+ & =(1\ 2\ 6)\ (3\ 4)\   (7\ 10 \ 9)\  (11\ 12\ 13\ 14) \\
 \end{align}
 $$
+
+> [!remark] 
+> 2-cycles are also called transpositions
+> 
+
+>[!remark] 
+> Every cycle can be written as a product of 2 cycles 
+> $(a_{1},a_{2},a_{3}\dots a_{n})=(a_{1},a_{n})(a_{1}\ a_{n-1})\dots(a_{1}\ a_{3})(a_{1}\ a_{2})$
+> $(a_{1},a_{2},a_{3}\dots a_{n})=(a_{1}\ a_{2})(a_{2}\ a_{3})\dots(a_{n-2}\ a_{n-1})(a_{n-1}\ a_{n})$
+
+> [!exercise] 
+> If a cycle can be expressed as a product of an even number of transpositions, it is always an even permutation. Similarly, if it is expressed as a product of an odd number of transpositions, all the transpositions will be odd.
+
+Let $x_{1},x_{2}\dots x_{n}$ be indeterminates 
+$$
+\begin{align}
+\Delta=\prod_{1\leq i<j\leq n}^{} (x_{i}-x_{j})
+\end{align}
+$$
+Let $\sigma \in S_{n}$ 
+$$
+\begin{align}
+\sigma(\Delta) & =\prod_{1\leq i<j\leq n}^{} (x_{\sigma(i)}-x_{\sigma(j)}  ) \\
+ & = \pm\Delta 
+\end{align}
+$$
+> [!definition] 
+> A permutation is said to be even if $\sigma(\Delta)=\Delta$ and is said to be odd if $\sigma(\Delta)=-\Delta$
+>Sign of a permutation $\sigma$ denoted by $\upvarepsilon(\sigma)$ is +1 if $\sigma$ is even, -1 if $\sigma$ is odd so
+>$\sigma(\Delta)=\upvarepsilon(\sigma)\Delta$ 
+
+
+
+The map $\upvarepsilon:S_{n}\to\pm1,\upvarepsilon(\sigma)$ is the sign of $\sigma$ satifies the following 
+satisfies $\upvarepsilon(\tau\sigma)=\upvarepsilon(\tau\sigma)$
+$\tau(\Delta)=\prod_{1\leq i<j\leq n}^{ }(x_{i}-x_{j})$
+Let there be $K$ factors such that $\tau(i)>\tau(j)$  and $i<j$
+$\tau(\Delta)=-1^{k}\Delta\implies\upvarepsilon(\tau)=-1^{k}$
+
+Now, $\sigma \tau(\Delta)$ has excatly $k$ factors of the form 
+$x_{\sigma(j)}-x_{\sigma(i)},j>i$
+Bring out a factor of $(-1)^{k}$ we have $\sigma \tau(\Delta)$ has all factor of the form $x_{\sigma(i)}-x_{\sigma(j)},i<j$ , 
+$$
+\begin{align}
+(\sigma \tau)(\Delta) & =-1^{k}\prod_{p<q}^{}x_{\sigma(p)}-x_{\sigma(q)} \\
+ & =-1^{k} \Delta(\sigma) \\
+ & =-1^{k} \upvarepsilon(\sigma)\Delta \\
+ & =\upvarepsilon(\tau)\upvarepsilon(\sigma)\Delta
+\end{align}
+$$
+
+> [!proposition] 
+> If $\lambda=(i\ j)$ a transposition, then $\upvarepsilon(\lambda)=-1$ 
+
+ > [!remark] 
+ > A cycle $\sigma$ of length $k$ is a even permutation iff $k$ is odd. This 
+> 
+
+
+
