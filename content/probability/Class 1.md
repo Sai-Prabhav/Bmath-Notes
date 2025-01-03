@@ -1,6 +1,7 @@
-Let $\Omega$ be a countable state space 
-$P(\omega),\omega \in \Omega$ 
-> [!lemma] 
+
+> [!thm] 
+> Let $\Omega$ be a countable state space 
+>$P(\omega),\omega \in \Omega$ 
 > For RV $\st$ $X(\omega)\leq Y(\omega) \fa\omega \in\Omega$ then
 > $\ex[X]\leq \ex[Y]$
 
@@ -44,3 +45,59 @@ $$
  > A better bound would be 
  > $P(x\geq a)\leq \frac{E(X.1_{{x\geq a}})}{a}$
 
+$X\sim N(0,1)$
+$f(x)= \frac{1}{\sqrt{ 2\pi }}e^{-x^{2}/2}$ 
+$$
+\begin{align}
+p(X>a) & =\int^{\infty}_{a}\frac{1}{\sqrt{ 2\pi }}\upvarepsilon^{-x^{2} /2}   dx \\
+ & \leq  \int^{\infty} _{a} \frac{x}{a}e^{-x^{2} /2} dx \\
+ & =\frac{1}{\sqrt{ 2\pi }a}(\left.-e^{x^{2} /2} \right|^{\infty}_{a}   )
+\end{align}
+$$
+
+> [!theorem] 
+> 
+let $X,Y$ be [Continuous Random Variable](https://sai-prabhav.github.io/bmath_notes/website/probability/7.-continuous-random-variable.html) 
+$0\leq x(\omega)\leq y(\omega)$ 
+>show that $\ex[X]\leq \ex[Y]$
+
+
+`\begin{proof}` 
+
+
+$$
+\begin{align}
+\ex[X] & =\int^{\infty}_{0}P(X>x)dx \\
+\ex[Y] & =\int^{\infty}_{0}P(Y>y)dx \\
+\left\{ X>x \right\} & \subseteq \left\{ Y>x \right\} \\
+P(X>x) & \leq P(y>x)
+\end{align}
+$$
+
+ `\end{proof}`
+### Chebyshev's inequality 
+
+> [!theorem] 
+> $X$ RV with finite mean $\mu=\ex[X]$ and finite varience $\sigma^{2}=\var[X]$ 
+> then for $a>0$
+> $P(\Mod[X-\mu]>a)\leq \frac{\var[X]}{a}$
+
+
+
+`\begin{proof}` 
+
+$$
+\begin{align}
+P(\Mod[X-\mu]^{2} \geq a^{2}  ) & \leq E\left( \frac{\Mod[X-\mu]^{2}}{a^{2} }  \right)  \\
+ & = \frac{\var[X]}{a^{2} } 
+\end{align}
+$$
+
+
+
+
+ `\end{proof}`
+
+> [!exercise] 
+> If $\var[X]=0$ then
+> 
