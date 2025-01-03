@@ -118,6 +118,12 @@
         options: "tAw",
     },
     {
+        trigger: "ie,",
+        replacement:
+            "that is",
+        options: "rtAw",
+    },
+    {
         trigger: /(\d)byb(\d)/,
         replacement: (match) => {
             const r = match[1];
