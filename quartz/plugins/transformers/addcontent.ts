@@ -24,8 +24,8 @@ export const AddContent: QuartzTransformerPlugin<{ }> = (opts) => {
         src = src.replace(/`\\end{proof}`/g, "\n\$\\blacksquare\$\n").replace(/`\\begin{proof}`/g, "\n\$\\bf{proof}\$\n")
         
       } 
-      else{
-        src = src.replace(/`\\end{proof}`/g, "\n\$\\blacksquare\$\n").replace(/`\\begin{proof}`/g, "\n\$\\bf{proof}\$\n")
+      else {
+        src = src.toString().replace(/`\\end{proof}`/g, "\n\$\\blacksquare\$\n").replace(/`\\begin{proof}`/g, "\n\$\\bf{proof}\$\n")
       }
       
       return `${content}\n${src}`

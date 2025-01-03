@@ -53,8 +53,7 @@ P\left( \Mod[U_{1}+\dots U_{n} ]  > \frac{na}{2} \right)  & \leq \frac{4\ex[{\Mo
 \end{align}
 $$
 
-> [!lemma]
-> $\ex[{\Mod[U_{1}]}]\to \ex[|X_{1}|]$
+> [!lemma] > $\ex[{\Mod[U_{1}]}]\to \ex[|X_{1}|]$
 
 solving $\Large{ II }$
 
