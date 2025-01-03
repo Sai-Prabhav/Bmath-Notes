@@ -1,3 +1,6 @@
+---
+date: 2025-01-02
+---
 An experimental unit. Person, thing, house, ect.
 Population: Set of all experimental units.
 Studying all experimental unit in a population may not be possible.

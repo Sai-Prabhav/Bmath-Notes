@@ -1,5 +1,5 @@
 ---
-date: 3-Jan-2025
+date: 2025-01-03
 ---
 Let $S_{n}$ denote the set of all bijections on the set $\left\{ 1,2,3,4\dots n \right\}$ 
 if $\sigma, tao \in S_{n}$ define $\sigma \theta$ to be the bijection 

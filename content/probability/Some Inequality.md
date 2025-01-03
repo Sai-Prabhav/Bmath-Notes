@@ -1,3 +1,7 @@
+---
+date: 2025-01-03
+---
+
 > [!thm]
 > Let $\Omega$ be a countable state space
 > $P(\omega),\omega \in \Omega$

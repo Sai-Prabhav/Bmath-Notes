@@ -11,3 +11,5 @@ Welcome to my BMath second semester notes. This collection of notes covers vario
 1. **Browse the Notes**: Navigate through the different sections and topics using the links provided.
 2. **Search**: Use the search functionality to quickly find specific topics or keywords.
 3. **External Resources**: Refer to the [documentation](https://quartz.jzhao.xyz) for additional resources and information on how to get the most out of these notes.
+
+
