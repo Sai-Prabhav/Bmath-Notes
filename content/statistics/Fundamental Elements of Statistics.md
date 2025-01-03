@@ -45,5 +45,7 @@ Example:
 Ordered but not numerical 
 - Rating like bad ok good better 
 - Grades 
+
 Previous: [[content/Statistics/Statistics Topics|Statistics Topics]]
+
 Next:
