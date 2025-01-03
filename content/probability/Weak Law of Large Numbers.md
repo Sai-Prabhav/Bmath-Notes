@@ -48,7 +48,23 @@ P\left( \Mod[U_{1}+\dots U_{n} ]  > \frac{na}{2} \right)  & \leq \frac{4\ex[{\Mo
 $$
 
 > [!lemma] 
-> $\ex[{\Mod[U_{1}]}]$
-> 
+> $\ex[{\Mod[U_{1}]}]\to \ex[|X_{1}|]$ 
+
+ solving $\Large{ II }$
+ $$
+\begin{align}
+P(V_{1}+V_{2}\dots V_{n} \neq0) & \leq P(\left\{ V_{1}\neq0 \right\}\cup \dots \cup \left\{ V_{n} \neq0 \right\} ) \\
+ & = nP(V\neq0) \\
+ & =nP(\Mod[X]>\delta_{n}  ) \\
+ & = n \sum_{|X|>\delta_{n}  }^{ } P(X_{1}=x ) \\
+ & \leq n \sum_{\Mod[X]  >\delta _{n} } \frac{\Mod[x]}{\delta_{n} }  P(X_{1}=x ) \\
+ & = \frac{1}{\delta}\ex[{\Mod[X_{1}]>\delta_{n} } ]\to0 \ (\text{ Lemma *})
+\end{align}
+
+$$
+
+Let $\delta= \frac{\upvarepsilon a^{2}}{16 \ex[X_{1}]}$
+
+Chose $N$ large $s$ that $\ex[U_{1}]\leq \frac{\upvarepsilon a }{4}$ then for $n>N_{1}$ chose $N_{2}$ large such that $*$ $\implies \frac{\upvarepsilon}{2}$ 
 
  `\end{proof}`
