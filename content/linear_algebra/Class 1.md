@@ -107,12 +107,24 @@ $$
 \end{align}
 $$
 
+ > [!remark] 
+ > A cycle $\sigma$ of length $k$ is a even permutation iff $k$ is odd. This is because $\sigma$ can be written as the product of odd permutaion that is k-1 permutation
+ 
 > [!proposition] 
 > If $\lambda=(i\ j)$ a transposition, then $\upvarepsilon(\lambda)=-1$ 
 
- > [!remark] 
- > A cycle $\sigma$ of length $k$ is a even permutation iff $k$ is odd. This 
-> 
+`\begin{proof}` 
+ Let $\lambda=(1,2)\in S_{n}$
+ $\lambda(\Delta)=-1\Delta$
+ if $\sigma=(i,j)\neq(1,2)$
+ then $\sigma=\lambda(1,2)\lambda$
+ where $\lambda$ interchanges 1,$i$ and 2,$j$ 
+ using that $\upvarepsilon$ is homomorhism $\upvarepsilon(ij)=1$
 
-
+ `\end{proof}`
+ 
+> [!proposition] 
+> if $\sigma=\sigma_{1}\sigma_{2}\sigma_{3}\dots\sigma_{k}$
+> if $\sigma_{i}$ is a $m_{i}$ -cycle then $\upvarepsilon(\sigma_{i})=-1^{m_{i}-1}$
+> $\upvarepsilon(\sigma)=(-1)^{({\sum m_{i}})-k}$
 
