@@ -67,4 +67,22 @@ Let $\delta= \frac{\upvarepsilon a^{2}}{16 \ex[X_{1}]}$
 
 Chose $N$ large $s$ that $\ex[U_{1}]\leq \frac{\upvarepsilon a }{4}$ then for $n>N_{1}$ chose $N_{2}$ large such that $*$ $\implies \frac{\upvarepsilon}{2}$ 
 
+$$
+\begin{align}
+\begin{pmatrix}
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
+\end{pmatrix}   
+\end{align}
+$$
+
+
  `\end{proof}`
+ 
