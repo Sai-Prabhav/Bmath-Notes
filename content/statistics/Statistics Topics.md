@@ -1,6 +1,7 @@
 ---
 date: 2025-01-02
 ---
+
 - Introduction
 - Real world Examples
 - Data & Statistics

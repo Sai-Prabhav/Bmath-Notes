@@ -1,6 +1,7 @@
 ---
 date: 2025-01-03
 ---
+
 Let $\left\{ X_{k} \right\}_{k\geq1}$ be a sequence of iid RVs with $\ex[\left|X_{1}\right|]<\infty$
 Let $\mu=\ex[X_{i}]$
 Then for any $a>0$
