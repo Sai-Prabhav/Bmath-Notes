@@ -19,7 +19,8 @@ $S_{n}$ is called the symmetric group of degree n
 > [!definition]
 > A cycle is a string of positive integers say, $(1,i_{2},i_{3}\dots i_{k})$ which represents the permutation $\sigma \in S_{n}$ $k\leq n$ such that $\sigma(i_{j})=i_{j+1},1\leq j\leq k\text{ and}$ $\sigma(i_{k})=1$ and fixes all other integers
 
-> [!example] > $(1\ 2 \ 3)\in S_{3}$ ($S_{3}$ is the only non-abelion group of order 6)
+> [!example] 
+>  $(1\ 2 \ 3)\in S_{3}$ ($S_{3}$ is the only non-abelion group of order 6)
 
 > [!exercise]
 > Show that group of order $p$ has only 1 group up to isomorphism that is ${\ZZ}/{p\ZZ}$
@@ -33,7 +34,7 @@ $S_{3}=\left\{ 1,\sigma=(1\ 2 \ 3),\sigma^{2}=(1 \ 3\ 2), \tau=(1 \ 2), \sigma \
 > [!remark]
 >
 > A cycle with contains $K$ integers is said to be of length $K$
-> A $K$ - Cycle $\sigma=(i_{1},i_{2}..i_{k})$ is of order $K$ ie, $\sigma^{k}=1$
+> A $K$ - Cycle $\sigma=(i_{1},i_{2}..i_{k})$ is of order $K$ $i$.$e$., $\sigma^{k}=1$
 
 > [!definition]
 > Two cycles in $S_{n}$ are called disjoint if they have no integer in common.
@@ -42,7 +43,7 @@ $S_{3}=\left\{ 1,\sigma=(1\ 2 \ 3),\sigma^{2}=(1 \ 3\ 2), \tau=(1 \ 2), \sigma \
 > If $\sigma$ and $\tau$ are two disjoint cycles in $S_{n}$ then $\sigma$ and $\tau$ commute, that is $\sigma$ $\tau$ =$\tau$ $\sigma$
 
 > [!claim]
-> Every $\sigma \in S_{n}$ can be write uniquely as a product of disjoint cycles
+> Every $\sigma \in S_{n}$ can be written uniquely as a product of disjoint cycles
 
 example:
 let $\sigma \in S_{n}$
@@ -90,13 +91,13 @@ $$
 > Sign of a permutation $\sigma$ denoted by $\upvarepsilon(\sigma)$ is +1 if $\sigma$ is even, -1 if $\sigma$ is odd so
 > $\sigma(\Delta)=\upvarepsilon(\sigma)\Delta$
 
-The map $\upvarepsilon:S_{n}\to\pm1,\upvarepsilon(\sigma)$ is the sign of $\sigma$ satifies the following
+The map $\upvarepsilon:S_{n}\to\pm1,\upvarepsilon(\sigma)$ is the sign of $\sigma$ satisfies the following
 satisfies $\upvarepsilon(\tau\sigma)=\upvarepsilon(\tau\sigma)$
 $\tau(\Delta)=\prod_{1\leq i<j\leq n}^{ }(x_{i}-x_{j})$
 Let there be $K$ factors such that $\tau(i)>\tau(j)$ and $i<j$
 $\tau(\Delta)=-1^{k}\Delta\implies\upvarepsilon(\tau)=-1^{k}$
 
-Now, $\sigma \tau(\Delta)$ has excatly $k$ factors of the form
+Now, $\sigma \tau(\Delta)$ has exactly $k$ factors of the form
 $x_{\sigma(j)}-x_{\sigma(i)},j>i$
 Bring out a factor of $(-1)^{k}$ we have $\sigma \tau(\Delta)$ has all factor of the form $x_{\sigma(i)}-x_{\sigma(j)},i<j$ ,
 
@@ -110,7 +111,8 @@ $$
 $$
 
 > [!remark]
-> A cycle $\sigma$ of length $k$ is a even permutation iff $k$ is odd. This is because $\sigma$ can be written as the product of odd permutaion that is k-1 permutation
+> A cycle $\sigma$ of length $k$ is an even permutation IFF $k$ is odd. This is because $\sigma$ can be written as the product of odd permutation that is k-1 permutation
+
 > [!proposition]
 > If $\lambda=(i\ j)$ a transposition, then $\upvarepsilon(\lambda)=-1$
 
@@ -120,10 +122,11 @@ $\lambda(\Delta)=-1\Delta$
 if $\sigma=(i,j)\neq(1,2)$
 then $\sigma=\lambda(1,2)\lambda$
 where $\lambda$ interchanges 1,$i$ and 2,$j$
-using that $\upvarepsilon$ is homomorhism $\upvarepsilon(ij)=1$
+using that $\upvarepsilon$ is homomorphism $\upvarepsilon(ij)=-1$
 
 `\end{proof}`
 
 > [!proposition]
 > if $\sigma=\sigma_{1}\sigma_{2}\sigma_{3}\dots\sigma_{k}$
-> if $\sigma_{i}$ is a $m_{i}$ -cycle then $\upvarepsilon(\sigma_{i})=-1^{m_{i}-1}$ > $\upvarepsilon(\sigma)=(-1)^{({\sum m_{i}})-k}$
+> if $\sigma_{i}$ is an $m_{i}$ -cycle then $\upvarepsilon(\sigma_{i})=-1^{m_{i}-1}$ 
+> $\upvarepsilon(\sigma)=(-1)^{({\sum m_{i}})-k}$

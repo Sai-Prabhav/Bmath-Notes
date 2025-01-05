@@ -2,13 +2,13 @@
 date: 2025-01-02
 
 ---
-An experimental unit. Person, thing, house, ect.
+An experimental unit. Person, thing, house, etc.
 Population: Set of all experimental units.
 Studying all experimental unit in a population may not be possible.
-Subset of population _Sample_ ie, Representative sample.
+Subset of population _sample_ i.e., Representative sample.
 
 For each experimental unit in the sample we record data on several variables.
-eg: House: Price, location, area ect.
+E.g.: House: Price, location, area etc.
 Univariate: One variable per unit
 Bivariate: 2 variable per unit
 Multivariate: multiple variant
@@ -43,7 +43,7 @@ Example:
 - Preference between A or B
 - Choice of elective course for student
 - Gender
-- Favorite
+- Favourite
 
 ### Quantitative
 

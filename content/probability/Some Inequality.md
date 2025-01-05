@@ -1,7 +1,7 @@
 ---
 date: 2025-01-03
 ---
-
+ 
 > [!theorem]
 > Let $\Omega$ be a countable state space
 > $P(\omega),\omega \in \Omega$
@@ -38,11 +38,12 @@ I_{a} (\omega) & =\begin{cases}
 0 \quad \text{o.w}
 \end{cases} \\
 I_{a(w)}  & \leq \frac{X(w)}{a } \\
-E(I_{a} ) & \leq \frac{X(\omega)}{a} \\
-P(x\geq a ) & \leq \frac{X(\omega)}{a} \\
+E(I_{a} ) & \leq \ex[{ \frac{X(\omega)}{a} }] \\
+P(X\geq a ) & \leq \frac{\ex[X] }{a} \\
 
 \end{align}
 $$
+
 
 `\end{proof}`
 
@@ -63,7 +64,7 @@ $$
 
 > [!theorem]
 >
-> let $X,Y$ be [Continuous Random Variable](https://sai-prabhav.github.io/bmath_notes/website/probability/7.-continuous-random-variable.html) > $0\leq x(\omega)\leq y(\omega)$
+> let $X,Y$ be [Continuous Random Variable](https://sai-prabhav.github.io/bmath_notes/website/probability/7.-continuous-random-variable.html)  $0\leq X(\omega)\leq Y\omega)$
 > show that $\ex[X]\leq \ex[Y]$
 
 `\begin{proof}`
@@ -72,10 +73,11 @@ $$
 \begin{align}
 \ex[X] & =\int^{\infty}_{0}P(X>x)dx \\
 \ex[Y] & =\int^{\infty}_{0}P(Y>y)dx \\
-\left\{ X>x \right\} & \subseteq \left\{ Y>x \right\} \\
-P(X>x) & \leq P(y>x)
+\left\{ X>a \right\} & \subseteq \left\{ Y>a \right\} \\
+P(X>a) & \leq P(y>a)
 \end{align}
 $$
+
 
 `\end{proof}`
 
