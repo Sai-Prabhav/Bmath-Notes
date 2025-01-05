@@ -9,9 +9,9 @@ date: 2025-01-03
 > $\ex[X]\leq \ex[Y]$
 
 `\begin{proof}`
-
-\begin{align}
 $$
+\begin{align}
+
 \ex[X] =\sum_{\omega \in\Omega}X(\omega)P(\omega) \leq  \sum_{\omega \in\Omega}Y(\omega)P(\omega)=\ex[Y]
 \end{align}
 $$
