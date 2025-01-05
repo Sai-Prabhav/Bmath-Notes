@@ -2,7 +2,7 @@
 date: 2025-01-03
 ---
 
-> [!thm]
+> [!theorem]
 > Let $\Omega$ be a countable state space
 > $P(\omega),\omega \in \Omega$
 > For RV $\st$ $X(\omega)\leq Y(\omega) \fa\omega \in\Omega$ then
@@ -20,7 +20,7 @@ $$
 
 ### Markov's Inequality
 
-> [!thm]
+> [!theorem]
 > Let $X$ non-negative RV then for $a>0$
 
 $$
@@ -82,7 +82,7 @@ $$
 ### Chebyshev's inequality
 
 > [!theorem] 
-> $X$ RV with finite mean $\mu=\ex[X]$ and finite varience $\sigma^{2}=\var[X]$
+> $X$ RV with finite mean $\mu=\ex[X]$ and finite variance $\sigma^{2}=\var[X]$
 > then for $a>0$  $P(\Mod[X-\mu]>a)\leq \frac{\var[X]}{a}$
 
 `\begin{proof}`

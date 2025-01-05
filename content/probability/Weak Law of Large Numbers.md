@@ -71,17 +71,19 @@ $$
 \begin{align}
 P(V_{1}+V_{2}\dots V_{n} \neq0) & \leq P(\left\{ V_{1}\neq0 \right\}\cup \dots \cup \left\{ V_{n} \neq0 \right\} ) \\
 & = nP(V\neq0) \\
-& =nP(\Mod[X]>\delta n  ) \\
-& = n \sum_{|X|>\delta n  }^{ } P(X_{1}=x ) \\
-& \leq n \sum_{\Mod[X]  >\delta _{n} } \frac{\Mod[x]}{\delta n }  P(X_{1}=x ) \\
+& =nP(\Mod[X_{1}]>\delta n  ) \\
+& = n \sum_{|x|>\delta n  }^{ } P(X_{1}=x ) \\
+& \leq n \sum_{\Mod[x]  >\delta _{n} } \frac{\Mod[x]}{\delta n }  P(X_{1}=x ) \\
 & = \frac{1}{\delta}\ex[{\Mod[X_{1}]>\delta n } ]\to0 \ (\text{ Lemma *})
 \end{align}
 
 
 $$
 
+
 Let $\delta= \frac{\upvarepsilon a^{2}}{16 \ex[X_{1}]}$
 
-Chose $N$ large $s$ that $\ex[U_{1}]\leq \frac{\upvarepsilon a }{4}$ then for $n>N_{1}$ chose $N_{2}$ large such that $*$ $\implies \frac{\upvarepsilon}{2}$
+Chose $N$ large such that $\ex[U_{1}]\leq \frac{\upvarepsilon a }{4}$ then for $n>N_{1}$ chose $N_{2}$ large such that $*$ $\implies \frac{\upvarepsilon}{2}$
 
 `\end{proof}`
+
