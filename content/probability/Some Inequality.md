@@ -81,8 +81,9 @@ $$
 
 ### Chebyshev's inequality
 
-> [!theorem] > $X$ RV with finite mean $\mu=\ex[X]$ and finite varience $\sigma^{2}=\var[X]$
-> then for $a>0$ > $P(\Mod[X-\mu]>a)\leq \frac{\var[X]}{a}$
+> [!theorem] 
+> $X$ RV with finite mean $\mu=\ex[X]$ and finite varience $\sigma^{2}=\var[X]$
+> then for $a>0$  $P(\Mod[X-\mu]>a)\leq \frac{\var[X]}{a}$
 
 `\begin{proof}`
 
