@@ -114,3 +114,5 @@ P(\Mod[X-\mu] >\upvarepsilon) & \leq \frac{\var[X]}{\upvarepsilon^{2} } \\
 $$
 
 `\end{proof}`
+Previous:
+Next: [[probability/Weak Law of Large Numbers|Weak Law of Large Numbers]]

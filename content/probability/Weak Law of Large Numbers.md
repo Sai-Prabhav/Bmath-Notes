@@ -65,6 +65,7 @@ $$
 > [!lemma]
  > $\ex[{\Mod[U_{1}]}]\to \ex[|X_{1}|]$
 
+$\ex[{\Mod[U_{1}]}]$
 solving $\Large{ II }$ 
 
 $$
@@ -83,7 +84,11 @@ $$
 
 Let $\delta= \frac{\upvarepsilon a^{2}}{16 \ex[X_{1}]}$
 
+
 Chose $N$ large such that $\ex[U_{1}]\leq \frac{\upvarepsilon a }{4}$ then for $n>N_{1}$ chose $N_{2}$ large such that $*$ $\implies \frac{\upvarepsilon}{2}$
 
 `\end{proof}`
 
+
+Previous:[[probability/Some Inequality|Some Inequality]]
+Next:
