@@ -2,7 +2,7 @@
 
 $$
 
- 
+\newcommand{\or}{\text{ or }}
    \newcommand{\Huge}[1]{\mbox{\Huge $#1$}}
    \newcommand{\Large}[1]{\mbox{\LARGE $#1$}}
    \newcommand{\tiny}[1]{\mbox{\tiny $#1$}}
