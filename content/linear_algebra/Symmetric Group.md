@@ -194,15 +194,45 @@ $$
  > If $B$ is obtained from A by interchanging two rows (or columns) then $\det A=-\det B$
  
 `\begin{proof}` 
-Let $B$ be obtained from A by inter chainging rows $l$ and $m$ 
+Let $B$ be obtained from A by inter changing rows $l$ and $m$ $l<m$
 
 $$
 \begin{align}
 \det A & =\sum_{\sigma \in S_{n}}^{ }a_{1\sigma(1)}a_{2\sigma(2) }\dots a_{n\sigma(n)} \\
-\det B & =
+\det B & = \sum_{\sigma \in S_{n}}^{ }b_{1\sigma(1)}b_{2\sigma(2) }\dots b_{n\sigma(n)} \\ \\
+\det B & = \sum_{\sigma \in S_{n}}^{ }a_{1\sigma(1)}a_{2\sigma(2) }\dots a_{l\sigma(m)}\dots a_{m\sigma(l)}\dots a_{n\sigma(n)} \\
+\end{align}
+$$
+as $\sigma$ runs over $S_{n}$ $\tau=\sigma(i\ j)$
+$$
+\begin{align}
+\det B & = \sum_{\tau \in S_{n}}^{ }\upvarepsilon(\tau)a_{1\tau(1)}a_{2\tau(2) }\dots a_{l\tau(m)}\dots a_{m\tau(l)}\dots a_{n\tau(n)} \\ \\
+\det B & = \sum_{\tau \in S_{n}}^{ }-\upvarepsilon(\sigma)a_{1\sigma(1)}a_{2\sigma(2) }\dots a_{l\sigma(l)}\dots a_{m\sigma(m)}\dots a_{n\sigma(n)} \\ \\
+ \det B & = -\det A
 \end{align}
 $$
 
+ `\end{proof}`
+
+
+> [!proposition] 
+> If two rows and columns of A are equal than det $A=0$ 
+
+
+`\begin{proof}` 
+Suppose $k$ th and $l$ th rows of A are equal interchanging will alter the det by -1 so
+$\det A=-\det A\implies2\det A=0$ if $2\neq0$ in $F$ 
+if $2=0$ in $F$ $i$,$e$ $F$ is of char 2 we pair the $\sigma$ term in the expression of det A with the term $i$.$e$ so that
+the addup to 0
+ `\end{proof}`
+ > [!theorem] 
+ > For a fixed $K$ let the kth row of A be the sum of 2 rows $X^{t}$ and $Y^{t}$ 
+ > $a_{kj}=x_{j}+y_{j} \fa 1\leq j\leq n$
+ > Then $\det A=\det B+\det C$
+ > $B$ is obtained from A by replacing the kth row of A with $X$ and $C$ is obtained by replacing $k$ th row of A with $Y$ 
+ 
+`\begin{proof}` 
 
 
  `\end{proof}`
+> 
