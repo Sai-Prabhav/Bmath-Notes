@@ -188,7 +188,20 @@ $$
 > Let $B$ be obtained from A by multplying a row (or colum) of A by a scalar $\alpha$ then $\det B= \det A \alpha$
 
 `\begin{proof}` 
+(::todo)
+ `\end{proof}`
+ > [!proposition] 
+ > If $B$ is obtained from A by interchanging two rows (or columns) then $\det A=-\det B$
+ 
+`\begin{proof}` 
+Let $B$ be obtained from A by inter chainging rows $l$ and $m$ 
 
+$$
+\begin{align}
+\det A & =\sum_{\sigma \in S_{n}}^{ }a_{1\sigma(1)}a_{2\sigma(2) }\dots a_{n\sigma(n)} \\
+\det B & =
+\end{align}
+$$
 
 
 
