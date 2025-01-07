@@ -7,3 +7,11 @@
 - h
 
 
+ so if  $x^{2}$ is negative $\sum_{j}^{0}$
+ $$
+\begin{align}
+\sum_{i=1}^{N} \\ \\
+
+\end{align}
+$$
+ 
