@@ -5,6 +5,7 @@
 4. $\mathcal{B}[a,b]=\left\{ f:[a,b]\to \RR \text{  bdd.} \right\}$
 
 
+
 > [!definition] Partition
 > A partition of $[a,b]$ 
 > $p:a=x_{0}<x_1<x_{2}\dots<x_{n}=b$
