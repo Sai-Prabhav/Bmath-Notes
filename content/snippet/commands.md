@@ -1,5 +1,3 @@
-
-
 $$
    \newcommand{\CR}{\mathcal{ R }} 
    \newcommand{\CP}{\mathcal{ P }} 
