@@ -102,14 +102,17 @@ $S_k'=X'_1+\dots+X_k$
 
 $P(S_m>S_0,S_m>S_1,\dots,S_m>S_{m-1})=P(S'_{i}>0 \fa i\leq m)$
 $P(S'_{i}>0 \fa i\leq m)=P(S_{i}>0 \fa i\leq m)$ as $X_{i}$ are iids 
+$S''_{k}=X_{m+1}\dots X_{m+k}$
 $$
 \begin{align}
-P(A) & =P(S'_{i}>0\fa i<m)P(S_{j}\geq0\fa m<j\leq m)\\
+P(A) & =P(S'_{i}>0\fa i<m)P(S''_{j}\geq0\fa m<j\leq m)\\
 &=P(S_{i}>0\fa i<m)P(S_{j}\geq0\fa m<j\leq m)\\
 \end{align}
 $$
 $$
 \begin{align}
-P(S_{j}\geq0 )
+P(S_{j}\geq0 \ j\leq n-m) & =P(\dot{X}+S_{j}>0 \fa j |\dot{X}=1) \\
+
 \end{align}
 $$
+$P(M_{n}=m)=\frac{1}{2}u_{2k}u_{2v-2k}$ if $m=2k$ or $m=2k+1$ 

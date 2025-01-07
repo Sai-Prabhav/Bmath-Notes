@@ -59,12 +59,25 @@ Ordered but not numerical
 - Rating like bad average good better
 - Grades
 
+Simple Random Sampling Without Replacement = SRSWOR
+Simple Random Sampling With Replacement = SRSWR
+
+## Measure of Reliability
+$\hat{\theta}$ is the measured value and $\theta$ is the actual value of the data 
+them $\Mod[\hat{\theta}-\theta]=$Error 
+## Collecting Data
+- Published source
+- Designed experiment: Selecting experimental units and administer same treatment 
+	EG: Effect of medicine on patients 
+- Observational Study: What percentage of population has ever shopped online.
+
+## Error due to Sampling
+1. Selection bias: Sample does not cover the whole population.
+2.  Non-response bias: People do not respond 
+3. Response bias (lying): Sensitive question 
+4. Measurement Error: Frame questions in a neutral non-judgemental way or Avoid leading questions 
+
 Previous: [[content/Statistics/Statistics Topics|Statistics Topics]]
 
 Next:
 
-$$
-\begin{align}
-
-\end{align}
-$$

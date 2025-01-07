@@ -1,0 +1,23 @@
+{
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "promptDelete": false,
+  "showRibbon": true,
+  "showLineNumber": true,
+  "showUnsupportedFiles": true,
+  "newFileLocation": "current",
+  "newLinkFormat": "absolute",
+  "spellcheckDictionary": [
+    "iid",
+    "Chebyshev",
+    "indeterminates",
+    "non-abelion"
+  ]
+}
