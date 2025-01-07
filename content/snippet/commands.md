@@ -1,8 +1,9 @@
 
 
 $$
-
-\newcommand{\or}{\text{ or }}
+   \newcommand{\CR}{\mathcal{ R }} 
+   \newcommand{\CP}{\mathcal{ P }} 
+   \newcommand{\or}{\text{ or }}
    \newcommand{\Huge}[1]{\mbox{\Huge $#1$}}
    \newcommand{\Large}[1]{\mbox{\LARGE $#1$}}
    \newcommand{\tiny}[1]{\mbox{\tiny $#1$}}
@@ -33,14 +34,15 @@ $$
    \newcommand{\then}{\text{ then }}
    \newcommand{\st}{\text{ such that }}
    \newcommand\peq{\stackrel{\mathclap{\tiny{ + }}}{\sim}}
-
-$$
+\CP \CR R
+ $$
 
 
 
 
 
 ```latex
+   \newcommad{\CR}{\mathcal{R}}
    \newcommand{\Huge}[1]{\mbox{\Huge $#1$}}
    \newcommand{\Large}[1]{\mbox{\LARGE $#1$}}
    \newcommand{\tiny}[1]{\mbox{\tiny $#1$}}
@@ -71,6 +73,7 @@ $$
    \newcommand{\let}{\text{ let }}
    \newcommand{\then}{\text{ then }}
    \newcommand{\st}{\text{ such that }}
+   \CR
 
 ```
 
