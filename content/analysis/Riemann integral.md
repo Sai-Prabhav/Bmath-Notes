@@ -3,7 +3,9 @@
 2. $\NN=\left\{ 1,2,3\dots N \right\}$
 3. $\ZZ_+$ = $\NN \cup \left\{ 0 \right\}$
 4. $\mathcal{B}[a,b]=\left\{ f:[a,b]\to \RR \text{  bdd.} \right\}$
-> [!definition] partition
+
+
+> [!definition] Partition
 > A partition of $[a,b]$ 
 > $p:a=x_{0}<x_1<x_{2}\dots<x_{n}=b$
 > $n-1$ nodes
@@ -73,12 +75,12 @@ $$
 
 
 > [!theorem] Lower Riemann Integration 
-> $\underline{\int^{b}_{a}}=sup \left\{ L(f,P)|p \in \mathcal{P}[a,b] \right\}$
+> $\underline{\int^{b}_{a}}f=sup \left\{ L(f,P)|p \in \mathcal{P}[a,b] \right\}$
 > 
 
 
 > [!theorem] Upper Riemann Integration 
-> $\overline{\int^{b}_{a}}=\inf \left\{ L(f,P)|p \in \mathcal{P}[a,b] \right\}$
+> $\overline{\int^{b}_{a}}f=\inf \left\{ L(f,P)|p \in \mathcal{P}[a,b] \right\}$
 
 
 

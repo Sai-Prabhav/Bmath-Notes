@@ -120,8 +120,10 @@ $$
 Let $\lambda=(1,2)\in S_{n}$
 $\lambda(\Delta)=-1\Delta$
 if $\sigma=(i,j)\neq(1,2)$
-then $\sigma=\lambda(1,2)\lambda$
-where $\lambda$ interchanges 1,$i$ and 2,$j$
+then $\lambda=\alpha(1,2)\alpha$
+where $\alpha$ interchanges 1,$i$ and 2,$j$
+$\upvarepsilon(\lambda)=\upvarepsilon(\alpha)\upvarepsilon(1,2)e(\alpha)=\upvarepsilon(\alpha)^{2}\upvarepsilon(1,2)=\upvarepsilon(1,2)=-1$
+
 using that $\upvarepsilon$ is homomorphism $\upvarepsilon(ij)=-1$
 
 `\end{proof}`
@@ -129,4 +131,65 @@ using that $\upvarepsilon$ is homomorphism $\upvarepsilon(ij)=-1$
 > [!proposition]
 > if $\sigma=\sigma_{1}\sigma_{2}\sigma_{3}\dots\sigma_{k}$
 > if $\sigma_{i}$ is an $m_{i}$ -cycle then $\upvarepsilon(\sigma_{i})=-1^{m_{i}-1}$ 
-> $\upvarepsilon(\sigma)=(-1)^{({\sum m_{i}})-k}$
+> $\upvarepsilon(\sigma)=(-1)^{({\sum m_{i}})-k}$ 
+
+
+
+> [!definition] Determinant
+> $$\det A=\sum_{\sigma \in S_{n}}^{ }a_{1\sigma(1)}a_{2\sigma(2)\dots a_{n\sigma(n)}}$$
+
+
+> [!remark] 
+> If A contains a row or column of zeros the det is 0 as each term in the sum has a 0 term
+
+> [!exercise] 
+> Prove that the determinant of a diagonal matrix is the product of the diagonal
+
+
+
+`\begin{proof}` 
+
+if $\sigma\neq I$ then 
+the product $a_{1\sigma(1)}\dots a_{n\sigma(n)}$ has atleast one term such that $a_{ij}$ where $i\neq j$ as $i\neq\sigma(i)$ for some $i$ 
+hence the product is zero and the only non-zero term in the determinant is when $!s=I$ that is $a_{11}\dots a_{nn}$
+
+
+ `\end{proof}`
+> [!corollary] 
+> If A is an upper triangle then $\det A$ is the product of diagonal entries
+
+`\begin{proof}` 
+
+If $a_{1\sigma(1)}\dots a_{n\sigma(n)}\neq0$ 
+then $a_{n\sigma(n)}\neq0$ $i$.$e$ $\sigma(n)=n$    
+$a_{n-1\sigma(n-1)}\neq0\implies n-1\leq\sigma(n-1)$ but $\sigma(n-1)\neq n$ as $\sigma(n)=n$ hence $\sigma(n-1)=n$
+similarly 
+$a_{i\sigma(i)}\neq0\implies i\leq\sigma(i)$ and $i>i-1$ $a_{j\sigma(j)}\neq0\implies\sigma(j)=j$ hence $\sigma(i)=i$
+ `\end{proof}`
+> [!theorem] 
+> $\det A=\det(A^{t})$
+
+`\begin{proof}` 
+$$
+\begin{align}
+\det A & = \sum_{\sigma \in S_{n} }^{}\upvarepsilon(\sigma)a_{1\sigma(1)} \dots a_{n\sigma(n)}   \\
+\det A^{t} & = \sum_{\sigma \in S_{n} }^{}\upvarepsilon(\sigma)a_{\sigma(1)1} \dots a_{\sigma(n)n} \\
+ &=\sum_{\sigma \in S_{n} }^{}\upvarepsilon(\sigma^{-1} )a_{1\sigma^{-1} (1)} \dots a_{n\sigma^{-1} (n)}  \\
+&=\sum_{\sigma \in S_{n} }^{}\upvarepsilon(\sigma^{} )a_{1\sigma (1)} \dots a_{n\sigma^{} (n)} \text{ as if } \sigma \in S_{n}\implies\sigma^{-1}  \in S_{n} 
+
+\end{align}
+$$
+
+
+
+
+ `\end{proof}`
+> [!proposition] 
+> Let $B$ be obtained from A by multplying a row (or colum) of A by a scalar $\alpha$ then $\det B= \det A \alpha$
+
+`\begin{proof}` 
+
+
+
+
+ `\end{proof}`

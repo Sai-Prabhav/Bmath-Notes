@@ -1,4 +1,5 @@
-;[
+[
+
     //theorems
     { trigger: "axm", replacement: "> [!axiom] $0\n> $1", options: "t" },
     { trigger: "def", replacement: "> [!definition] $0\n> $1", options: "t" },
@@ -386,10 +387,12 @@
     },
 
     {
-        trigger: /\\(arcsin|sin|arccos|cos|arctan|tan|csc|sec|cot)([A-Za-gi-z])/,
+        trigger:
+            /\\(arcsin|sin|arccos|cos|arctan|tan|csc|sec|cot)([A-Za-gi-z])/,
         replacement: "\\[[0]] [[1]]",
         options: "rmA",
-        description: "Add space after trig funcs. Skips letter h to allow sinh, cosh, etc.",
+        description:
+            "Add space after trig funcs. Skips letter h to allow sinh, cosh, etc.",
     },
 
     {
@@ -568,21 +571,21 @@
     {
         trigger: /iden(\d)/,
         replacement: (match) => {
-            const n = match[1]
+            const n = match[1];
 
-            let arr = []
+            let arr = [];
             for (let j = 0; j < n; j++) {
-                arr[j] = []
+                arr[j] = [];
                 for (let i = 0; i < n; i++) {
-                    arr[j][i] = i === j ? 1 : 0
+                    arr[j][i] = i === j ? 1 : 0;
                 }
             }
 
-            let output = arr.map((el) => el.join(" & ")).join(" \\\\\n")
-            output = `\\begin{pmatrix}\n${output}\n\\end{pmatrix}`
-            return output
+            let output = arr.map((el) => el.join(" & ")).join(" \\\\\n");
+            output = `\\begin{pmatrix}\n${output}\n\\end{pmatrix}`;
+            return output;
         },
         options: "mA",
         description: "N x N identity matrix",
     },
-]
+];
