@@ -33,3 +33,31 @@ $$
 $P(S_{n}=k)=\frac{N_{n}(k)}{2^{n}}$ 
 where $N_{n}(k)$ is the number of distinct paths that starts at 0 and end at $k$ at time $n$ 
 where $N_{n}^{-}(k)$ is the number of distinct paths that starts at 0 and end at $k$ at time $n$ and stays above $x$ axis up to time n-1 
+
+Convention: $\begin{pmatrix}n \\ t\end{pmatrix}=0$ if $t$ is not an integer 
+
+> [!lemma] The method of images 
+> 
+> $0<a<a'$ and $b,b'>0$ Then # of paths  from $(a,b)$ to $(a',b')$ that intersecting the $x$ axis= # paths from $(a,-b)$ and $(a',b')$
+
+`\begin{proof}` 
+Consider any path $b=k_{0},\dots k_{n}=b'$ from $(a,b)$ to $(a',b')$  that intersects the x-axis 
+$j$:=smallest index for which $k_{j}=0$ 
+$A=(a,b),A'=(a',b'),C=(a+j,c),A''=(a,-b)$
+Reflect the segment from A to $B$ about the $x$ axis to obtain a mirror path from A to $B$. 
+to get a path from $A''$ to $A'$ 
+ `\end{proof}`
+
+> [!corollary] 
+> $N_{n}^{+}(k)=\frac{k}{n}\begin{pmatrix}n \\ \frac{n+k}{2}\end{pmatrix}$
+
+
+
+$$
+\begin{align}
+N_{n}^{+}(k) & =\#\text{Path from (1,1) to (n,k)}-\#\text{ passing throught 0 from }(1,1)\to(n,k) \\
+ & =N_{n-1}(k-1)-N_{n-1}(k+1)   \\
+ & = \begin{pmatrix}n-1 \\ \frac{n+k}{2}-1\end{pmatrix} - \begin{pmatrix}n-1 \\ \frac{n+k}{2}\end{pmatrix}  \\
+ & =\frac{k}{n}\begin{pmatrix}n \\ \frac{n+k}{2}\end{pmatrix} 
+\end{align}
+$$
