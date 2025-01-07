@@ -62,3 +62,9 @@ Ordered but not numerical
 Previous: [[content/Statistics/Statistics Topics|Statistics Topics]]
 
 Next:
+
+$$
+\begin{align}
+
+\end{align}
+$$
