@@ -61,3 +61,55 @@ N_{n}^{+}(k) & =\#\text{Path from (1,1) to (n,k)}-\#\text{ passing throught 0 fr
  & =\frac{k}{n}\begin{pmatrix}n \\ \frac{n+k}{2}\end{pmatrix} 
 \end{align}
 $$
+$u_{2v}$ :=p($S_{2v}$ =0)=$\frac{\begin{pmatrix}2v \\ v\end{pmatrix}}{2^{2r}}$
+
+$A:$ Even where 1st return to 0 occurs after step $n$ and 
+$2v=n$
+
+$$
+\begin{align}
+p(A) & =P(S_{i}\neq0\fa i\leq2v) \\
+ & =p(s_{1}>0,\dots s_{2v}>0 )+p(s_{1}<0,\dots s_{2v}<0 ) \\
+ & =2p(s_{1}>0\dots s_{2v}>0 ) \\
+ & = 2 \sum_{k>0\text{even}}^{} p(s_{i}>0 \fa i\leq2v ) \\
+ & = \frac{2}{2^{2v} } \sum_{k>0}^{} N^{+}_{2v}(k) \\
+ & = \frac{2}{2^{2v}  } \sum_{k>0}^{} N^{+}_{2v} (k)  \\
+  & =\frac{2}{2^{2v} }N_{2v-1} (1) \\ \\
+ & = u_{2v} 
+ 
+\end{align}
+$$
+
+
+
+$Q_{n}$ : Fix $n$ where does the RW achieve its first max up to time $n$ 
+$M_{n}:$ index $m$ at which the walk over $n$ steps achieve its maximum for 1 sth time 
+Let the even in $Q_{n}$ be $A$
+for $0<m<n$
+$M_{n}=m$
+$S_{m}>S_{0}, S_{m}>S_{1}\dots S_{m}>S_{m-1}\to*$
+$S_{m}\geq S_{m+1},S_{m}\geq S_{m+2}\dots S_{m}\geq S_{n}\to**$
+
+1. $*$ only depends on $X_{1},\dots X_{m}$
+
+2. $**$ only depends on $X_{m+1}\dots X_{n}$
+
+
+## Key Idea 
+Consider reversed random walk from X_m
+let $X_1'=X_m\dots X'_m=X_1$
+$S_k'=X'_1+\dots+X_k$
+
+$P(S_m>S_0,S_m>S_1,\dots,S_m>S_{m-1})=P(S'_{i}>0 \fa i\leq m)$
+$P(S'_{i}>0 \fa i\leq m)=P(S_{i}>0 \fa i\leq m)$ as $X_{i}$ are iids 
+$$
+\begin{align}
+P(A) & =P(S'_{i}>0\fa i<m)P(S_{j}\geq0\fa m<j\leq m)\\
+&=P(S_{i}>0\fa i<m)P(S_{j}\geq0\fa m<j\leq m)\\
+\end{align}
+$$
+$$
+\begin{align}
+P(S_{j}\geq0 )
+\end{align}
+$$
