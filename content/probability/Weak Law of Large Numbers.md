@@ -44,7 +44,7 @@ P(\Mod[X_{1}+X_{2}+\dots X_{n}  ]\geq na  ) & \leq \underbrace{ P\left( |U_{1}+\
 \end{align}
 $$
 
-Solving $\Large{ I }$  
+Solving ${ I }$  
 
 $$
 \begin{align} 
@@ -63,10 +63,10 @@ $$
 
 
 > [!lemma]
- > $\ex[{\Mod[U_{1}]}]\to \ex[|X_{1}|]$
+ > $\ex[{\Mod[U_{1}]}]\stackrel{n\to \infty}{\to} \ex[|X_{1}|]$
 
 $\ex[{\Mod[U_{1}]}]$
-solving $\Large{ II }$ 
+solving ${ II }$ 
 
 $$
 \begin{align}
@@ -74,7 +74,7 @@ P(V_{1}+V_{2}\dots V_{n} \neq0) & \leq P(\left\{ V_{1}\neq0 \right\}\cup \dots \
 & = nP(V\neq0) \\
 & =nP(\Mod[X_{1}]>\delta n  ) \\
 & = n \sum_{|x|>\delta n  }^{ } P(X_{1}=x ) \\
-& \leq n \sum_{\Mod[x]  >\delta _{n} } \frac{\Mod[x]}{\delta n }  P(X_{1}=x ) \\
+& \leq n \sum_{\Mod[x]  >\delta {n} } \frac{\Mod[x]}{\delta n }  P(X_{1}=x ) \\
 & = \frac{1}{\delta}\ex[{\Mod[X_{1}]>\delta n } ]\to0 \ (\text{ Lemma *})
 \end{align}
 
