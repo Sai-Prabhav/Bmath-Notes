@@ -76,7 +76,7 @@ $$
 
 
 > [!theorem] Lower Riemann Integration 
-> $\underline{\int^{b}_{a}}f=sup \left\{ L(f,P)|p \in \mathcal{P}[a,b] \right\}$
+> $\underline{\int^{b}_{a}}f=\sup \left\{ L(f,P)|p \in \mathcal{P}[a,b] \right\}$
 > 
 
 
@@ -88,4 +88,7 @@ $$
 > [!definition]  Riemann integral
 > A bounded function $f$ is Riemann integral $f\in \mathcal{R}[a,b]$
 > $\overline{\int^{b}_{a}}f=\underline{\int^{b}_{a}}f:={\int^{b}_{a}}f$
+
+
+
 
