@@ -1,4 +1,5 @@
 $$
+   \newcommand{\norm}[1][P]{\left\lVert#1\right\rVert}
    \newcommand{\CR}{\mathcal{ R }} 
    \newcommand{\CP}{\mathcal{ P }} 
    \newcommand{\or}{\text{ or }}
@@ -79,7 +80,7 @@ $$
 $$
 \begin{align}
 \stackrel{{\stackrel{{\stackrel{{\stackrel{{\stackrel{{\tiny{ + }}}{\sim}}}{\sim}}}{\sim}}}{\sim}}}{\sim} \\
-
+exi
 \end{align}
 $$
 
