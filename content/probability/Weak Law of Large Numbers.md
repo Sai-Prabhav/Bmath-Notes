@@ -93,7 +93,9 @@ Chose $N$ large such that $\ex[U_{1}]\leq \frac{\upvarepsilon a }{4}$ then for $
 > If $\ex[X]<\infty$ 
 $$\ex[{\Mod[X]1_{\left\{ \Mod[X]\leq n  \right\}}  }] \stackrel{n\to \infty}{\to} \ex[{\Mod[X] }]$$
  this implies that 
- $$\ex[X1_{\Mod[X]\leq n } ] \stackrel{n\to \infty}{\to} EX
+ 
+ $$\ex[X1_{\Mod[X]\leq n } ] \stackrel{n\to \infty}{\to} \ex[X] $$
+ 
 
 
 Previous:[[probability/Some Inequality|Some Inequality]]
