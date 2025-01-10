@@ -11,7 +11,7 @@ $$P \left(\Mod[ \frac{X_{1}+X_{2}+\dots+X_{n}}{n} -\mu ]>a\right)\stackrel{n\to 
 Assume $\Omega$ is countable
 $a>0$ is fixed
 Case 1: $\sigma^{2}=\var[X_{1}]<\infty$
-from [[probability/Some Inequality#Chebyshev's inequality|Chebyshev's inequality]]
+from [[probability/Some inequalities#Chebyshev's inequality|Chebyshev's inequality]]
 
 $$
 \begin{align}
@@ -98,7 +98,7 @@ $$\ex[{\Mod[X]1_{\left\{ \Mod[X]\leq n  \right\}}  }] \stackrel{n\to \infty}{\to
  
 
 
-Previous:[[probability/Some Inequality|Some Inequality]]
+Previous:[[probability/Some inequalities|Some inequalities]]
 
 
 Next:

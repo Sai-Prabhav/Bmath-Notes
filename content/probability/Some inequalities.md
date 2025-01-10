@@ -1,6 +1,4 @@
----
-date: 2025-01-03
----
+
  
 > [!theorem]
 > Let $\Omega$ be a countable state space
