@@ -14,14 +14,32 @@ u_{2k} =P(s_{2k} =0) & =\frac{ \begin{pmatrix}2k \\ k\end{pmatrix} }{2^{2k} } \\
  & = \frac{1}{\sqrt{ \pi k }}
 \end{align}
 $$
-$a<a<b<1$
+$0<a<b<1$
 
 $$
 \begin{align}
 P\left(a_{n}   \leq M_{n} \leq b_{n}  \right)  & =\sum_{m=an}^{bn} P(M_{n} =m) \\
  & = \sum_{m=an}^{n} P(M_{n} =m) \\
- & = \sum_{k=av}^{v} u_{2k} u_{2v-2k} 
+ & = \sum_{k=av}^{v} u_{2k} u_{2v-2k}  \\
+ & \simeq \sum_{k=av}^{bv} \frac{1}{ \sqrt{ \pi k }\sqrt{ \pi(v-k) }}  \\
+ & = \frac{1}{v}\sum_{k=av}^{bv} \frac{1}{\sqrt{ \frac{\pi k}{v} }\sqrt{ 1-\frac{k}{v} }}\stackrel{v\to \infty}{\to} \frac{1}{\pi}\int^{b} _{a} \frac{dx}{\sqrt{ x(1-x) }} \\
+ & = \frac{1}{\pi} \int^{\sqrt{ b }} _{\sqrt{ a }} \frac{2udu}{\sqrt{ u^{2} -u^{4}  }} \\
+ & = \frac{2}{\pi}(\arcsin \sqrt{ b }-\arcsin \sqrt{ a }) \\
+
+\end{align}
+$$
+
+### Arcsin Law for Maxima
+For each $0\leq t\leq1$
+
+$$
+\begin{align}
+P\left( \frac{M_{n}}{n}\leq t  \right)  & \stackrel{n\to \infty}{\to} \frac{2}{\pi}\arcsin(\sqrt{ t }) \\
+\frac{d}{dx}\arcsin \sqrt{ x } & =\frac{1}{2} \frac{1}{\sqrt{ x(1-x) }}
 \end{align}
 $$
 
 
+
+$Q_n$ Probability RW of $n=2v$ steps last visits 0 at time $2k$ 
+$K_{n}:$ Location of last return to 0 in a walk of $n$ steps 
