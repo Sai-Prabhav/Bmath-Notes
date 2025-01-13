@@ -263,7 +263,7 @@
     { trigger: "set", replacement: "\\left\\{ $0 \\right\\}$1", options: "mA" },
     {
         trigger: "exi",
-        replacement: "\\exists \\ \t",
+        replacement: " \\ \t\\exists \\ \t",
         options: "mA",
         priority: 10,
     },

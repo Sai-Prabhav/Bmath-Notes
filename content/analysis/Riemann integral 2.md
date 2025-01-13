@@ -183,4 +183,3 @@ $\implies U(f,P)-L(f,P)<\upvarepsilon+U(f,\hat{P})-L(f,\hat{P})<\upvarepsilon+U(
 
 
  `\end{proof}`
- 

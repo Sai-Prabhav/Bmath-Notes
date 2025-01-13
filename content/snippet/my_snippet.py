@@ -28,6 +28,8 @@
     },
     { trigger: "Ex", replacement: "\\ex[${0:X}] $1", options: "mA" },
         { trigger: "norm", replacement: "\\norm[${0:P}] $1", options: "mA" },
+        
+        { trigger: "n\\orm", replacement: "\\norm[${0:P}] $1", options: "mA" , priority: 100,},
      { trigger: "TT", replacement: "\\stackrel{${0:n}${1:\\to} ${2:\\infty}}{\\to}", options: "mA" },
     {
         trigger: "sset",
