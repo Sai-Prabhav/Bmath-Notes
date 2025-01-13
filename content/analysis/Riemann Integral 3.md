@@ -61,3 +61,40 @@ $$
 > 
 > $\int^{1}_{0}f$ when $f(x)=x^{2}$ 
 
+$\fa n\in \NN$ consider
+$P_{n}:x_{i}=\frac{i}{n}$
+$I_j=\left[ \frac{{j-1}}{n}, {\frac{i}{n} } \right] \fa j$
+$M_{j}=\left( \frac{j}{n} \right)^{2}$
+$m_{j}=\frac{j-1}{n}^{2}$
+$$
+\begin{align}
+U(f,P_{n} ) & =\sum_{i=1}^{N} \frac{1}{n}\times \frac{i^{2}}{n^{2} } \\
+ & =\frac{1}{n^{3} }  \sum_{i=1}^{N} i^{2}   \\
+ & =\frac{1}{n^{3} } \frac{1}{6}n (n+1)(2n+1) \\
+ & = \frac{\left( 1+\frac{1}{n} \right)\left( 2+\frac{1}{n} \right)}{6} \\
+ & \to \frac{2}{6} \\
+ & =\frac{1}{3}
+\end{align}
+$$
+$$
+\begin{align}
+L(f,P_{n} ) & =\sum_{i=1}^{N} \frac{1}{n}\frac{(j-1)^{2} }{n^{2} } \\
+ & = \frac{1}{n^{3} } \frac{1}{6 } (n-1)(n)(2n-1)\to \frac{1}{3}
+\end{align}
+$$
+
+> [!example]  $\CR[a,b]\supsetneq C[a,b]$
+> function given below
+
+
+
+$$
+\begin{align}
+f(x)=\begin{cases}
+1 \if x \in[0, \frac{1}{2}) \\
+\frac{1}{2} \if x=\frac{1}{2 \\
+} \\
+0 \if x \in(\frac{1}{2},1]
+\end{cases}
+\end{align}
+$$
