@@ -1,8 +1,8 @@
 > [!theorem] Recal
 > if $f\in \mathcal{B}[a,b]$ TFAE
-> 1. $f\in \CR[]a,b]$
-> 2. $\upvarepsilon>0\exists \ 	P\in \CP[a,b]\st0\leq u(f,P)-l(f,P)<\upvarepsilon$
-> 3. $\upvarepsilon>0 \exists \ 	\delta >0\st0\leq u(f,P)-L(f,P)<\upvarepsilon \fa P\in \CP[a,b]\text{ with }\norm[P]$
+> 1. $f\in \CR[a,b]$
+> 2. $\upvarepsilon>0\ \exists \ 	P\in \CP[a,b]\st0\leq u(f,P)-l(f,P)<\upvarepsilon$
+> 3. $\upvarepsilon>0\ \exists \ 	\delta >0\st0\leq u(f,P)-L(f,P)<\upvarepsilon \fa P\in \CP[a,b]\text{ with }\norm[P]$
 > 
 
 $C[a,b]$ continuous in $[a,b]$
@@ -17,13 +17,22 @@ $$
 \end{align}
 $$
 Pick $P\in \CP[a,b] \ \exists \ 	\norm[P]<\delta$
+
 and fix such a $P:a=x_{0}<x_{1}<\dots<x_{n}<b$
+
 $\therefore u(f,P)-L(f,P)=\sum_{j=1}^{N}(M_{j}-m_{j})\Mod[I_{j}]$
+
 now $\res[f]{I_{j}}:I_{j}\to \RR$ a continuous function for all $j$ 
-$\exists \eta_{j},\zeta_{j}\in I_{j}.\st f(\eta_{j})=M_{j},f(\zeta_{j})=m_{j}$
-$M_{j}-m_{j}=f(\eta_{j}-f(\zeta_{j}))$
+
+$\exists \ \eta_{j},\zeta_{j}\in I_{j}.\st f(\eta_{j})=M_{j},f(\zeta_{j})=m_{j}$
+
+
+$M_{j}-m_{j}=f(\eta_{j})-f(\zeta_{j})$
+
 as $\Mod[\eta_{j}-\zeta_{j}]<\delta$ it follows that $M_{j}-m_{j}< \frac{\upvarepsilon}{b-a}\fa j$
+
 $\implies(M_{j}-m_{j})\Mod[I_{j}]< \frac{\upvarepsilon}{b-a}\Mod[I_{j}]$
+
 $\implies \sum_{j=1}^{N}--"--<\upvarepsilon$
 
 
