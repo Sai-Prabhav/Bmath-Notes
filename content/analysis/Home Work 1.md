@@ -81,6 +81,8 @@ as $\upvarepsilon$ is arbitrary $\alpha'=\alpha\implies \int^{a}_{b}f=\alpha$
 
 
 $\begin{array}{l}\\ \mathrm{Q_n} \ 5:\ {{\mathrm{Give~an~example~of~a~function~}}f\in B[0,1]}\\{{\mathrm{~that~is~not~Riemann~integrable~but~}}f^{2}\in R[0,1].}\end{array}$
+
+$\mathrm{Answer:}$
 $$
 \begin{align}
 f(x)=\begin{cases}
@@ -93,3 +95,74 @@ $\text{range}(f)=\left\{ \sqrt{ 2 }-1,\sqrt{ 3 }-1 \right\}$
 $f\left(\left\{ \sqrt{ 2 }-1,\sqrt{ 3 }-1 \right\}\right)=\sqrt{ 3 }-1\implies f(f(x))=\sqrt{ 3 }-1\fa x \in \RR$
 here $f$ is not integrable but $f^{2}$ is [[analysis/Riemann integral 1#^d41959|Riemann integrable]] 
 
+
+$\begin{array}{l} \mathrm{Q_n} \ 6: \ {\mathrm{Let~}}f,g\in B(a,b),\;\mathrm{and let}\ f(x)\leq g(x)\quad{\mathrm{for~all~}}x\in[a,b]\\ \mathrm{Prove~that}\end{array}$
+
+$${{\underline{\int_{b}^{a}}f\leq \underline{\int_{b}^{a}}g}\text{~and~}{\overline\int_{a}^{a}f\leq\overline \int_{a}^{a}g}}.$$
+
+
+$\mathrm{Answer:}$
+Fix $P$ then Let $M_{i}$ be sup in $f(I_{i})$ $M'_{i}$ in $g(I_{i})$ and $m_{i}$ be inf in $f(I_{i})$ and $m'_{i}$ be inf in $g(I_{i})$
+clearly $M_{i}\leq M'_{i}$ and $m_{i}\leq m'_{i}$ 
+
+
+$$
+\begin{align} 
+\implies U(f,P) & \leq U(g,P) \\
+L(f,P) & \leq L(g,P)\fa P\in \CP[a,b]\\
+\implies \inf(U(f,P)) & \leq\inf(U(g,P)) \\
+\sup(L(f,P)) & \leq\sup(U(g,P)) \\
+ \ \overline{\int^{b}_{a}}f  & \leq\overline{\int^{b}_{a}}g  \\
+\underline{\int^{b}_{a}}f  & \leq \underline{\int^{b}_{a}}g 
+\end{align}
+$$
+
+
+$${\mathrm{Let~}}f,g\in{\mathcal{R}}[a,b],{\mathrm{~and~let~}}f(x)\leq g(x){\mathrm{~for~all~}}x\in[a,b].{\mathrm{~Prove~that~}}\int_{a}^{b}f\leq\int_{a}^{b}g.{\mathrm{~}}$$
+
+$\begin{array}{l} \mathrm{Q_n} \ 7: {\mathrm{Let~}}f,g\in{\mathcal{R}}[a,b],{\mathrm{~and~let~}}f(x)\leq g(x){\mathrm{~for~all~}}x\in[a,b].\\{\mathrm{~Prove~that~}}\int_{a}^{b}f\leq\int_{a}^{b}g.{\mathrm{~}}\end{array}$
+
+$\mathrm{Answer:}$
+from the previous question we have seen $\overline{\int^{b}_{a}}f\leq \overline{\int^{b}_{a}}g$
+if $f,g\in \CR[a,b]\implies \overline{\int^{b}_{a}}f={\int^{b}_{a}}f$ and $\overline{\int^{b}_{a}}g={\int^{b}_{a}}g$
+hence ${\int^{b}_{a}}f\leq {\int^{b}_{a}}g$
+
+$\begin{array}{l} \mathrm{Q_n} \ 8:{\mathrm{True/False~(with~explanation).~if~}}f(x)\leq g(x)\leq h(x){\mathrm{~for~all~}}x\in[a,b],\\{\mathrm{~and~}}f,h\in\mathcal{R}[a,b],\text{~then~} g\in \CR{a,b} \end{array}$
+
+$\mathrm{Answer:}$
+No, Let $g$ be any bounded function which is not [[analysis/Riemann integral 1#^d41959|Riemann integrable]] 
+let $f$ be a constant $\inf$  $g$ and $h$ be a constant sup $g$ 
+$g$ can be Dirichlet function
+This is a counter example proving the statement false 
+
+
+$\begin{array}{l} \mathrm{Q_n} \ 9: {{\mathrm{Consider~the~characteristic~function~}\chi_{[1,3]}~{\mathrm{on}}~[0,5].~}}\\ {{\mathrm{Prove~that~}\chi_{[1,3]}\in\mathcal{R}[0,5],~\mathrm{and~then}}{\mathrm{compute~}\int_{0}^{5}\chi_{[1,3]}.}}\end{array}$
+
+$\mathrm{Answer:}$
+$\let P:x_{0}=0<x_{1}=1-\upvarepsilon<x_{2}=1+\upvarepsilon<x_{3}=3-\upvarepsilon<x_{4}=3+\upvarepsilon<x_{5}=5$
+$$
+\begin{align}
+U(P,f)-L(P,f) & =M_{1}\Mod[I_{1}]+\dots+M_{5}\Mod[I_{5}]-\left( m_{1}\Mod[I_{1}]+\dots+m_{5}\Mod[I_{5}] \right) \\
+ & = (M_{1}-m_{1}  ) \Mod[I_{1} ] +\dots + (M_{5} -m_{1})\Mod[I_5]  \\
+ & = (0)(1-\upvarepsilon)+(1-0)2\upvarepsilon+(1-1) (2-2\upvarepsilon)+(1-0) (2e)+(0)(2-\upvarepsilon) \\
+ & = 4\upvarepsilon \\
+ & =\upvarepsilon'(\text{say~~~} \upvarepsilon'=4\upvarepsilon)
+\end{align}
+$$
+
+As $\exists$ a $P$ for every $\upvarepsilon'>0$ $\st U(P,f)-L(P,f)<\upvarepsilon$ 
+Hence $f$ is [[analysis/Riemann integral 1#^d41959|Riemann integrable]] 
+$\implies\overline{\int^{5}_{0}}f={\int^{5}_{0}}f$
+$$
+\begin{align}
+\overline{\int^{5}_{0}}f  & = \inf \left\{ U(f,P) \right\} \\
+ & =\inf(2\upvarepsilon+\left( 2-2\upvarepsilon \right)+2\upvarepsilon ) \\
+ & =  \inf(2+2\upvarepsilon) \\
+ & =2 \text{~as~}\upvarepsilon \text{ is arbitory >0} 
+\end{align}
+$$
+$\overline{\int^{5}_{0}}f=2={\int^{5}_{0}}f$
+
+
+
+$\begin{array}{l} \mathrm{Q_n} \ 10: \end{array}$
