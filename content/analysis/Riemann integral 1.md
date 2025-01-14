@@ -91,6 +91,8 @@ $$
 > A bounded function $f$ is Riemann integral $f\in \mathcal{R}[a,b]$
 > $\overline{\int^{b}_{a}}f=\underline{\int^{b}_{a}}f:={\int^{b}_{a}}f$
 
+^d41959
+
 
 
 
