@@ -67,6 +67,8 @@ $$
 > $U(f,p)=\sum_{j=1}^{n}M_{j}\Mod[I_{j}]$ this is Upper Riemann sum
 > 
 
+^6bd201
+
 > [!theorem] 
 > $m(b-a)\leq L(f,p)\leq U(f,p)\leq M(b-a) \fa P\in \mathcal{P}[a,b]$
 
