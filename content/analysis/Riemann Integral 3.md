@@ -52,10 +52,15 @@ $Q_{n}:$ How to compute? Below we will see one of the first attempts to compute 
 
 `\begin{proof}` 
 $\implies$
+
 $\implies$ Let $f\in \CR[a,b]$ for $\upvarepsilon=\frac{1}{n}, \ 	\exists \ 	P_{n}\in \CP[a,b]\st(0\leq)U(f,P_{n})-L(f,P_{n})< \frac{1}{n}$
+
 $\implies U(f,P_{n})-L(f,P_{n})\to0$
+
 $\impliedby$
+
 For the final part
+
 $$
 \begin{align}
 0 & \leq U(f,P_{n} )-\overline{\int^{b}_{a}}f =U(f,P_{n} ) -\underline{\int^{b}_{a}}f  \\
@@ -66,15 +71,21 @@ $$
 
  `\end{proof}`
 
+
 > [!example] 
 > 
 > $\int^{1}_{0}f$ when $f(x)=x^{2}$ 
 
 $\fa n\in \NN$ consider
+
 $P_{n}:x_{i}=\frac{i}{n}$
+
 $I_j=\left[ \frac{{j-1}}{n}, {\frac{i}{n} } \right] \fa j$
+
 $M_{j}=\left( \frac{j}{n} \right)^{2}$
+
 $m_{j}=\frac{j-1}{n}^{2}$
+
 $$
 \begin{align}
 U(f,P_{n} ) & =\sum_{i=1}^{N} \frac{1}{n}\times \frac{i^{2}}{n^{2} } \\
