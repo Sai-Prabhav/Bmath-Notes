@@ -1,7 +1,9 @@
 $$
+
    \newcommand{\norm}[1][P]{\left\lVert#1\right\rVert}
    \newcommand{\CR}{\mathcal{ R }} 
    \newcommand{\CP}{\mathcal{ P }} 
+   \newcommand{\CS}{\mathcal{ S}} 
    \newcommand{\or}{\text{ or }}
    \newcommand{\Huge}[1]{\mbox{\Huge $#1$}}
    \newcommand{\Large}[1]{\mbox{\LARGE $#1$}}
@@ -28,12 +30,13 @@ $$
    \newcommand{\mat}{\text{mat }} 
    \newcommand{\if}{\text{ if }}
    \newcommand{\so}{\text{ so }}
+   \newcommand{\upvarepsilon}{\varepsilon}
 
    \newcommand{\let}{\text{ let }}
    \newcommand{\then}{\text{ then }}
    \newcommand{\st}{\text{ such that }}
    \newcommand\peq{\stackrel{\mathclap{\tiny{ + }}}{\sim}}
-\CP \CR R
+\overline{\int^{b}_{a}}f \underline{\int^{b}_{a}}f 
  $$
 
 

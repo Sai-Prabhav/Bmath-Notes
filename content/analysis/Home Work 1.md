@@ -86,7 +86,7 @@ $\mathrm{Answer:}$
 $$
 \begin{align}
 f(x)=\begin{cases}
-\sqrt{ 2 }-1 \if x=\frac{1}{n}n\in \NN \\
+\sqrt{ 2 }-1 \if x \text{ is rational }  \\
 \sqrt{ 3 }-1 \if \text{Other wise}
 \end{cases} \\
 \end{align}
@@ -166,3 +166,38 @@ $\overline{\int^{5}_{0}}f=2={\int^{5}_{0}}f$
 
 
 $\begin{array}{l} \mathrm{Q_n} \ 10: \end{array}$
+$\mathrm{Answer:}$
+For any $P$ $L(f,P)=0$ as between any 2 real numbers there exist a irrational number and f(irrational number)=0 hence inf of any sub interval is 0
+lets focus of $U(f,P)<\upvarepsilon$ 
+Let $P$ be $\st$ $x_{0}=0<x_{1}=\frac{1}{m}-\delta <x_{2}=\frac{1}{m}+\delta<x_{3}=\frac{1}{m-1}-\delta\dots x_{2m-1}=\frac{1}{1}-\delta\leq x_{2m}=1$
+let $\delta>0$ be $\delta< \frac{1}{m}-\frac{1}{m+1}$
+$\Mod[I_{1}]=\frac{1}{m}$
+$\Mod[I_{2}]=2\delta$
+$\Mod[I_{3}]=\frac{1}{m-1}-\frac{1}{m}-2\delta$
+$\Mod[I_{4}]=2\delta$
+$\Mod[I_{2k+1}]=\frac{1}{m-k}-\frac{1}{m-k+1}-2\delta$
+$\Mod[I_{2k}]=2\delta$
+
+$M_{1}=\frac{1}{m+1},M_{2}=\frac{1}{m},M_{3}=0,M_4=\frac{1}{m-1},M_{4}=0\dots$
+$M_{2k}=\frac{1}{m-k-1}$
+$M_{2k+1}=0$
+
+$$
+\begin{align}
+U(f,P) & =\frac{1}{m}\left( \frac{1}{m-1} \right)+2\delta \left( \frac{1}{m} \right)+\Mod[I_{3} ] (0)+2\delta\left( \frac{1}{m-1} \right)+\dots +\Mod[I_{2m-1} ] (0)+\delta(1) \\
+ & =\frac{1}{m}\left( \frac{1}{m-1} \right) +2\delta\left( \frac{1}{m}+\frac{1}{m-1} \dots \frac{1}{2} \right) +\delta \\
+ & \leq \frac{1}{m}\left( \frac{1}{m-1} \right)+2\delta\left( \frac{1}{m }+\frac{1}{m-1}\dots+1 \right)
+\end{align}
+$$
+chose $m\st \frac{1}{m(m-1)}<\frac{\upvarepsilon}{2}$
+once $m$ is fixed chose $\delta \st\delta< \frac{\upvarepsilon}{2\times\left( \frac{1}{m}+\frac{1}{m-1}+\dots+1 \right)}$
+so we get 
+$$
+\begin{align}
+U(f,P)& \leq \frac{1}{m}\left( \frac{1}{m-1} \right)+2\delta\left( \frac{1}{m }+\frac{1}{m-1}\dots+1 \right) \\
+ & \leq \frac{\upvarepsilon}{2} +\frac{\upvarepsilon}{2} \\
+ U(f,P)& \leq\upvarepsilon
+\end{align}
+$$
+Hence $f\in \CR[1,0]$
+$\int^{1}_{0}f=\overline{\int^{1}_{0}}f=\inf\left\{ U(f,P) \right\}=\inf\left\{ \upvarepsilon \right\}=0$

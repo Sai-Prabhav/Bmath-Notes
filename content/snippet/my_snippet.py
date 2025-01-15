@@ -50,6 +50,7 @@
     { trigger: "-ZZ", replacement: "\\ZZ^{-}", options: "mA" },
 
     { trigger: "BB", replacement: "\\mathcal{B}", options: "mA" },
+      { trigger: "CS", replacement: "\\CS", options: "mA" },
 
     { trigger: "cal", replacement: "\\mathcal{$0} $1", options: "mA" },
 
