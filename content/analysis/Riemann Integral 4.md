@@ -54,5 +54,49 @@ $$
 
 "$\implies$" 
 
+set $\lambda=\int^{b}_{a}f$ Fix $\upvarepsilon>0 \ 	\exists \ 	\delta>0\st U(f,P)-L(f,P)<\upvarepsilon\fa \norm[P]<\delta$
+$$
+\begin{align}
+U(f,P)-L(f,P) & <\upvarepsilon\fa \norm[P] <\delta \\
+U(f,P)-\CS(f,P) & <\upvarepsilon \fa \norm[P] <\delta \\
+\implies \CS(f,P) & \to U(f,P) \text{ for } \upvarepsilon \text{ small} \\
+\implies U(f,P) & \to \overline{\int^{b}_{a}}f \text{ for $\delta$ small}
+\\
+\implies \CS(f,P)&\to \overline{\int^{b}_{a}}f ={\int^{b}_{a}}f 
+\end{align}
+$$
+$\impliedby$
+
+$$
+\begin{align}
+\lambda-\frac{\upvarepsilon}{2} & \leq \CS(f,P)  \leq\lambda+\frac{\upvarepsilon}{2} \\
+\lambda-\frac{\upvarepsilon}{2} & \leq \sum_{j=1}^{n} f(\zeta_{j} )\Mod[I_{j} ] \leq\lambda+\frac{\upvarepsilon}{2}  \\
+
+
+\end{align}
+$$
+by taking inf and sup for a fixed $P$ 
+
+$$
+\begin{align}
+\lambda-\frac{\upvarepsilon}{2 } \leq L(f,P)\leq\lambda+\upvarepsilon \\
+\lambda-\frac{\upvarepsilon}{2 } \leq U(f,P)\leq\lambda+\upvarepsilon \\
+
+\end{align}
+$$
+$$
+\begin{align}
+U(f,P)-L(f,P)\leq\delta+\frac{\upvarepsilon}{2 }-\delta +\frac{\upvarepsilon}{2}=\upvarepsilon \fa \norm[P] <\delta
+\end{align}
+$$
+$\implies f\in \CR[a,b]$ 
+Finally $\fa \norm[P]<\delta$ we have 
+
+$$
+\begin{align}
+\lambda-\frac{\upvarepsilon}{2 }\leq L(f,P)\leq \underline{\int^{}_{}}f =\overline{\int^{ }_{ }}f \leq U(f,P)\leq\lambda+\frac{\upvarepsilon}{2 } \\
+
+\end{align}
+$$
 
  `\end{proof}`
