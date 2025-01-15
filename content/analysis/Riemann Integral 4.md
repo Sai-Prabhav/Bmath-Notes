@@ -94,9 +94,44 @@ Finally $\fa \norm[P]<\delta$ we have
 
 $$
 \begin{align}
-\lambda-\frac{\upvarepsilon}{2 }\leq L(f,P)\leq \underline{\int^{}_{}}f =\overline{\int^{ }_{ }}f \leq U(f,P)\leq\lambda+\frac{\upvarepsilon}{2 } \\
-
+\lambda-\frac{\upvarepsilon}{2 }\leq L(f,P)\leq \underline{\int^{}_{}}f  & =\overline{\int^{ }_{ }}f \leq U(f,P)\leq\lambda+\frac{\upvarepsilon}{2 } \\
+\lambda & =\int f
 \end{align}
 $$
 
+
+
  `\end{proof}`
+
+
+
+> [!theorem] 
+> 
+> Let $f\in \CR[a,b]\&\left\{ P_{n} \right\}\subseteq \CP[a,b]\st \norm[P_{n}]\to0$
+> then $\lim_{n\to \infty}\CS(f,P_{n})=\int^{b}_{a}f\fa T_{P_{n}}$
+
+`\begin{proof}` 
+
+Let $\upvarepsilon>0 \ 	\exists \ 	\delta>0 \st \fa \norm[P]<\delta \ \  U(f,P)-L(f,P)<\upvarepsilon$ 
+$\exists \  N\in \NN \st \norm[P_{n}]<\delta \fa n\geq N$
+$\implies U(f,P_{n})-L(f,P_{n})<\upvarepsilon\fa n\geq N$
+
+$$
+\begin{align}
+U\left( f,P_{n} -\int f  \right) + \left( \int f-L(f,P_{n} ) \right)<\upvarepsilon\fa n\geq N
+\end{align}
+$$
+$$
+\begin{align}
+\implies U(f,P)-\int(f) & <\upvarepsilon \\
+\int f-L(f,P) & <\upvarepsilon \\
+\implies\int f-\CS(f,P) & <\upvarepsilon
+\end{align}
+$$
+
+
+ `\end{proof}`
+
+
+
+
