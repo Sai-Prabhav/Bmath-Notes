@@ -30,3 +30,17 @@ and roots of $\det(xI_{n}-A)$ which lies in $F$ are called the eigenvalues
 > [!claim] 
 > $\det(\lambda I_{n}-P^{-1}AP)=\det(\lambda I_{n}-A)$
 
+> [!proposition] 
+> Let $\lambda_{1},\dots\lambda_{r}$ be distinct eigenvalues of $T:V\to V$ and let $V_{1},\dots V_{n}$ be the corresponding eigenvectors of $T$ then $(v_{1},v_{2},\dots V_{r})$ is a linear independent set in $V$ 
+
+$tr(A)=tr(P^{-1}AP)=tr(APP^{-1})=tr(A)$
+so we define $tr(T)=tr(A)$ 
+$\det T=\det A$ 
+where A is a matrix associated with $T$ wrt some basis $\mathcal{B}$ 
+
+
+The constant term of $\det(xI_{A })$ is the values at $x=0$ $i$,$e$. $\det(-A)=(-1)^{n}\det A$ 
+the coeff of $x^{n-1}$ is $\det(xI-A)$ is -trace (A) 
+
+
+sum of eigenvalues is the trace of A and product is the $\det A$ 
