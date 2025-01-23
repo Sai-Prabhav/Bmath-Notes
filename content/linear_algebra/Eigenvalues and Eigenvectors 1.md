@@ -1,3 +1,7 @@
+---
+date: 2025-01-22
+---
+
 A non-zero vector $v\in V$ is an eigenvector of $T$ if $Tv=\lambda v$ for some $\lambda \in F$ 
 
 Let $A_{n\times m}$ over $F$ then the column vector $X\in F^{n}$ is said to be an eigenvector of A if $AX=\lambda X$ for some $\lambda \in F$  $i$,$e$. $X$ is an eigenvector of The corresponding linear map $T_{A}:F^{n}\to F^{n}$
