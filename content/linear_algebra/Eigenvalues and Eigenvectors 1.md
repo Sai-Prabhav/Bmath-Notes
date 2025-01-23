@@ -48,3 +48,13 @@ the coeff of $x^{n-1}$ is $\det(xI-A)$ is -trace (A)
 
 
 sum of eigenvalues is the trace of A and product is the $\det A$ 
+
+
+> [!theorem] 
+> Let $T$ be a linear operator on a finite dim vector space $V$ let $\lambda_{1}\dots\lambda_{k}$ be the distinct eigenvalues of $T$  let $E_{\lambda_{1}},\dots E_{\lambda_{k}}$ be the eigenspace of $\lambda_{1},\dots,\lambda_{k}$ 
+> TFAE
+> - $T$ is diagonalizable
+> - $\chi_{_{_{T}}}(x)=(x-\lambda_{1})^{d_{1}}\dots(x-\lambda_{k})^{d_{k}}$ and $\dim E_{\lambda_{i}}=d_{i}\fa i$
+> - $V=E_{\lambda_{1}}\oplus \dots \oplus E_{\lambda_{k}}$
+
+
