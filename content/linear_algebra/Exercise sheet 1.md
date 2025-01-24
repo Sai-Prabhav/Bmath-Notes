@@ -21,3 +21,15 @@ the number of path that reach $a$ then $-b$ and finally $c$ at time $n$ is $T_{n
 so the number of that reach $a$ then $c$ without touching $-b$ in between is $N_{n}(2a-c)-N_{n}(2a+2b+c)$
 
 
+# Question 2
+
+let $F(k)$ be the paths that touch atleast $a$,$b$ $k$ times  
+$F(k)$ include the path $0\to\underbrace{  a\to b }_{ k \text{ times} }\dots c$ and $0\to \underbrace{ b\to a }_{ k \text{ times} }\to b\to a\dots b\to c$ 
+the total paths from 0 to $c$ without touching a or -$b$ is 
+so $F(k)=N_{n}(2k(a+b)-c)+N_{n}(2k(a+b)+c)$
+$$
+\begin{align}
+ & = N_{n}(c) -N_{n}(2a-c) -N_{n}(2b+c)  + F(1)-F(2)\dots \\
+ & = 
+\end{align}
+$$
