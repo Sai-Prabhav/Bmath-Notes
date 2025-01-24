@@ -19,6 +19,7 @@
         replacement: "$\\RR$[[1]]",
         options: "rtAw",
     },
+  
     {
         trigger: /(?<!\\)(\b[0-9a-zA-Z]*[a-zA-Z])(\d+)(\b)/,
         replacement: "[[0]]_{[[1]]}",
