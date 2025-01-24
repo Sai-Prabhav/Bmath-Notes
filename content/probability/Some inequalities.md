@@ -6,7 +6,7 @@
 > For RV $\st$ $X(\omega)\leq Y(\omega) \fa\omega \in\Omega$ then
 > $\ex[X]\leq \ex[Y]$
 
-`\begin{proof}`
+`\begin{proof}`Nd
 $$
 \begin{align}
 

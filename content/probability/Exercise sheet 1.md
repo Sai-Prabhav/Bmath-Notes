@@ -30,6 +30,6 @@ so $F(k)=N_{n}(2k(a+b)-c)+N_{n}(2k(a+b)+c)$
 $$
 \begin{align}
  & = N_{n}(c) -N_{n}(2a-c) -N_{n}(2b+c)  + F(1)-F(2)\dots \\
- & = 
+ & = \sum_{}^{} N_{n}(2k(a+b )-c) -N_{n} (2k(a+b)+2a-c)
 \end{align}
 $$
